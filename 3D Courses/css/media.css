@@ -1,0 +1,273 @@
+@media (max-width: 768px) {
+  /* glob */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .button {
+    padding: 21px 56px;
+  }
+
+  .section__title {
+    margin-bottom: 15px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 135px;
+  }
+
+  .hero__container {
+    background-image: url("../img/decor/768/bg-hero-768.webp"),
+      url("../img/decor/768/bg-hero-768.png");
+  }
+
+  .hero__title {
+    margin-bottom: 14px;
+    padding-top: 13px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .hero__button {
+    margin-bottom: 0;
+    padding: 25px 76px;
+  }
+
+  /* advantages */
+
+  .advantages__content {
+    padding-left: 240px;
+  }
+
+  .advantages__content::before {
+    top: 24px;
+    width: 211px;
+    height: 187px;
+    background-image: url("../img/decor/768/bg-advantages-768.webp"),
+      url("../img/decor/768/bg-advantages-768.png");
+  }
+
+  .advantages__item {
+    padding-top: 95px;
+    padding-left: 0;
+  }
+
+  /* courses */
+
+  .courses__item__content {
+    min-height: 378px;
+  }
+
+  .courses__item_1 .courses__item__time {
+    background-image: url("../img/decor/768/courses-1-768.webp"),
+      url("../img/decor/768/courses-1-768.jpg");
+  }
+
+  .courses__item_2 .courses__item__time {
+    background-image: url("../img/decor/768/courses-2-768.webp"),
+      url("../img/decor/768/courses-2-768.jpg");
+  }
+
+  .courses__item_3 .courses__item__time {
+    background-image: url("../img/decor/768/courses-3-768.webp"),
+      url("../img/decor/768/courses-3-768.jpg");
+  }
+
+  .courses__item_4 .courses__item__time {
+    background-image: url("../img/decor/768/courses-4-768.webp"),
+      url("../img/decor/768/courses-4-768.jpg");
+  }
+}
+
+@media (max-width: 576px) {
+  /* glob */
+
+  .container {
+    max-width: 540px;
+  }
+
+  .button {
+    padding: 21px 48px;
+  }
+
+  /* header */
+
+  .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-bottom: 30px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-top: 77px;
+  }
+
+  .hero__container {
+    background: none;
+  }
+
+  .hero__title {
+    padding-top: 0;
+  }
+
+  /* advantages */
+
+  .advantages__content {
+    padding-left: 180px;
+  }
+
+  .advantages__content::before {
+    background-image: url("../img/decor/576/bg-advantages-576.webp"),
+      url("../img/decor/576/bg-advantages-576.png");
+  }
+
+  .advantages__content::before {
+    top: 0;
+    width: 150px;
+    height: 134px;
+  }
+
+  /* courses */
+
+  .courses__item__content {
+    min-height: 473px;
+  }
+
+  .courses__item_1 .courses__item__time {
+    background-image: url("../img/decor/576/courses-1-576.webp"),
+      url("../img/decor/576/courses-1-576.jpg");
+  }
+
+  .courses__item_2 .courses__item__time {
+    background-image: url("../img/decor/576/courses-2-576.webp"),
+      url("../img/decor/576/courses-2-576.jpg");
+  }
+
+  .courses__item_3 .courses__item__time {
+    background-image: url("../img/decor/576/courses-3-576.webp"),
+      url("../img/decor/576/courses-3-576.jpg");
+  }
+
+  .courses__item_4 .courses__item__time {
+    background-image: url("../img/decor/576/courses-4-576.webp"),
+      url("../img/decor/576/courses-4-576.jpg");
+  }
+}
+
+@media (max-width: 320px) {
+  /* glob */
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .section__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .button {
+    padding: 21px 56px;
+  }
+
+  /* header */
+
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .header__logo {
+    margin-bottom: 25px;
+  }
+
+  .header__nav__list {
+    gap: 13px;
+    font-size: 15px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .hero__text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .hero__button {
+    padding: 21px 54px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  /* advantages */
+
+  .advantages__content {
+    padding-left: 0;
+  }
+
+  .advantages__content::before {
+    width: 0;
+    height: 0;
+    background-image: none;
+  }
+
+  .advantages__item {
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
+  /* courses */
+
+  .courses__item__content {
+    min-height: 473px;
+  }
+
+  .courses__item_1 .courses__item__time {
+    background-image: url("../img/decor/320/courses-1-320.webp"),
+      url("../img/decor/320/courses-1-320.jpg");
+  }
+
+  .courses__item_2 .courses__item__time {
+    background-image: url("../img/decor/320/courses-2-320.webp"),
+      url("../img/decor/320/courses-2-320.jpg");
+  }
+
+  .courses__item_3 .courses__item__time {
+    background-image: url("../img/decor/320/courses-3-320.webp"),
+      url("../img/decor/320/courses-3-320.jpg");
+  }
+
+  .courses__item_4 .courses__item__time {
+    background-image: url("../img/decor/320/courses-4-320.webp"),
+      url("../img/decor/320/courses-4-320.jpg");
+  }
+}
