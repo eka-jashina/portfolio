@@ -1,0 +1,728 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "TTFirsNeue", "Roboto", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTFirsNeue";
+  src: local("TTFirsNeue"),
+    url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"),
+    url("../fonts/TTFirsNeue-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTFirsNeue";
+  src: local("TTFirsNeue"),
+    url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"),
+    url("../fonts/TTFirsNeue-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $dark-text-color;
+  background-color: $light-bg-color;
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: 320px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (max-width: 1024px) {
+    max-width: 992px;
+  }
+  @media (max-width: 768px) {
+    max-width: 744px;
+  }
+  @media (max-width: 320px) {
+    max-width: 308px;
+  }
+}
+
+.section__title {
+  font-family: "TTFirsNeue", "Roboto", sans-serif;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  @media (max-width: 320px) {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  background-color: $dark-bg-color;
+  color: $light-text-color;
+  @media (max-width: 1024px) {
+    padding-top: 27px;
+  }
+  @media (max-width: 320px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  &__logo {
+    max-height: 31px;
+    margin-right: 140px;
+    @media (max-width: 1024px) {
+      max-height: 27px;
+      margin-right: 82px;
+    }
+    @media (max-width: 320px) {
+      max-height: 18px;
+    }
+  }
+
+  &__search {
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @media (max-width: 320px) {
+      max-height: 20px;
+    }
+  }
+}
+
+.nav__list {
+    gap: 79px;
+    font-family: "TTFirsNeue", "Roboto", sans-serif;
+    @media (max-width: 1024px) {
+      gap: 33px;
+    }
+    @media (max-width: 768px) {
+      gap: 72px;
+    }
+  }
+
+  .nav__link {
+    @include link-effects;
+  }
+
+/* hero */
+
+.hero {
+  padding-top: 41px;
+  padding-bottom: 64px;
+  @media (max-width: 1024px) {
+    padding-top: 34px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 36px;
+  }
+  @media (max-width: 320px) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+.affiche {
+  padding: 15px 15px 60px 60px;
+  color: $light-text-color;
+  background-image: url("../img/decor/1920/masterclass-affiche-1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 1024px) {
+    padding: 15px 15px 30px 30px;
+    background-image: url("../img/decor/1024/masterclass-affiche-1024.jpg");
+  }
+  @media (max-width: 768px) {
+    background-image: url("../img/decor/768/masterclass-affiche-768.jpg");
+  }
+  @media (max-width: 320px) {
+    background-image: url("../img/decor/320/masterclass-affiche-320.jpg");
+  }
+
+  &__title {
+    max-width: 427px;
+    margin-bottom: 19px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+    order: 3;
+    @media (max-width: 1024px) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 23px;
+      max-width: 239px;
+      line-height: 30px;
+    }
+    @media (max-width: 320px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__desc {
+    order: 2;
+    line-height: 19px;
+    @media (max-width: 1024px) {
+      margin-bottom: 9px;
+    }    
+    @media (max-width: 768px) {
+      margin-bottom: 14px;
+    }
+    @media (max-width: 320px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__tag {
+    margin-bottom: 361px;
+    @include tag-style;
+    order: 1;
+    @media (max-width: 1024px) {
+      margin-bottom: 380px;
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+    order: 4;
+    @include button-style;
+    @include button-effects-standart
+  }
+}
+
+.works {
+  &__title {
+    margin-bottom: 17px;
+    line-height: 25px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 23px;
+    }
+    @media (max-width: 320px) {
+      font-size: 18px;
+      line-height: 19px;
+    }
+  }
+}
+
+/* about */
+
+.about {
+  padding-bottom: 69px;
+  color: $lighter-text-in-dark-block-color;
+  background-color: $dark-bg-color;
+  @media (max-width: 1024px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 48px;
+  }
+  @media (max-width: 320px) {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    color: $light-text-color;
+  }
+
+  &__desc {
+    line-height: 28px;
+    @media (max-width: 320px) {
+      line-height: 25px;
+    }
+  }
+
+  &__mailing {
+    position: relative;
+    padding-top: 278px;
+    @include img-in-before;
+    @media (max-width: 1024px) {
+      padding-top: 353px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 593px;
+    }
+    @media (max-width: 320px) {
+      padding-top: 304px;
+    }
+
+    &::before {
+      width: 100%;
+      height: 255px;
+      background-image: url("../img/decor/1920/about-mailing-1920.jpg");
+      @media (max-width: 1024px) {
+        height: 332px;
+        background-image: url("../img/decor/1024/about-mailing-1024.jpg");
+      }
+      @media (max-width: 768px) {
+        height: 569px;
+        background-image: url("../img/decor/768/about-mailing-768.jpg");
+      }
+      @media (max-width:320px) {
+        height: 569px;
+        background-image: url("../img/decor/320/about-mailing-320.jpg");
+      }
+    }
+  }
+}
+
+.form-mail {
+  &__label {
+    width: 79.8%;
+  }
+  &__desc {
+    margin-bottom: 16px;
+    font-family: "TTFirsNeue", "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 22px;
+    @media (max-width: 320px) {
+      margin-bottom: 14px;
+      font-size: 18px;
+    }
+  }
+
+  &__field {
+    margin-right: $gap;
+    @include form-field-style-dark;
+    @media (max-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    @include button-effects-standart;
+  }
+}
+
+/* projects */
+
+.projects {
+  padding-top: 68px;
+  padding-bottom: 38px;
+  @media (max-width: 320px) {
+    margin-top: 50px;
+    margin-bottom: 19px;
+  }
+}
+
+.project {
+  padding: 7px 6px 0 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__tag {
+    margin-bottom: 163px;
+    @include tag-style;
+    order: -1;
+    @media (max-width: 1024px) {
+      margin-bottom: 166px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 13px;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+
+    &:focus-visible {
+      outline: 0;
+      background-color: $project-link-focus-color;
+    }
+
+    &:active {
+      color: $link-active-color;
+    }
+  }
+
+  &__date {
+    position: relative;
+    padding-left: 18px;
+    font-size: 12px;
+    color: $lighter-text-in-light-block--color;
+    @include img-in-before;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      background-image: url("../img/decor/calendar.svg");
+    }
+  }
+}
+
+.project-large {
+  padding: 7px 7px 30px 30px;
+  color: $light-text-color;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__tag {
+    order: 1;
+    @include tag-style;
+  }
+
+  &__title {
+    max-width: 292px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    order: 3;
+  }
+
+  &__date {
+    position: relative;
+    padding-left: 18px;
+    font-size: 12px;
+    color: $lighter-text-in-light-block--color;
+    @include img-in-before;
+    order: 2;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      background-image: url("../img/decor/calendar-white.svg");
+    }
+  }
+
+  &__desc {
+    max-width: 292px;
+    order: 4;
+  }
+
+  &__button {
+    margin-top: auto;
+    align-self: flex-start;
+    background-color: transparent;
+    @include button-effects-transparent;
+    order: 5;
+  }
+}
+
+.tag__link {
+  @include link-effects;
+}
+
+.projects-list {
+  background-size: contain;
+
+  &__landscape {
+    background-image: url("../img/decor/1920/project-landscape-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-landscape-1024.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-landscape-320.jpg");
+    }
+  }
+
+  &__portrait-man {
+    background-image: url("../img/decor/1920/project-portrait-man-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-portrait-man-1024.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-portrait-man-320.jpg");
+    }
+  }
+
+  &__object {
+    background-image: url("../img/decor/1920/project-object-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-object-1024.jpg");
+    }
+    @media (max-width: 768px) {
+      background-image: url("../img/decor/768/project-object-768.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-object-320.jpg");
+    }
+  }
+
+  &__fuji {
+    background-size: cover;
+    background-image: url("../img/decor/1920/project-fuji-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-fuji-1024.jpg");
+    }
+    @media (max-width: 768px) {
+      background-image: url("../img/decor/768/project-fuji-768.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-fuji-320.jpg");
+    }
+  }
+
+  &__oblivion {
+    background-size: cover;
+    background-image: url("../img/decor/1920/project-oblivion-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-oblivion-1024.jpg");
+    }
+    @media (max-width: 768px) {
+      background-image: url("../img/decor/768/project-oblivion-768.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-oblivion-320.jpg");
+    }
+  }
+
+  &__retouch {
+    background-image: url("../img/decor/1920/project-retouch-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-retouch-1024.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-retouch-320.jpg");
+    }
+  }
+
+  &__portrait-woman {
+    background-image: url("../img/decor/1920/project-portrait-woman-1920.jpg");
+    @media (max-width: 1024px) {
+      background-image: url("../img/decor/1024/project-portrait-woman-1024.jpg");
+    }
+    @media (max-width: 320px) {
+      background-image: url("../img/decor/320/project-portrait-woman-320.jpg");
+    }
+  }
+}
+
+/* contacts */
+
+.contacts {
+  padding-bottom: 68px;
+}
+
+.contacts__title {
+  margin-bottom: 14px;
+}
+
+.map {
+  position: relative;
+  &__wrapper {
+    position: absolute;
+    width: 48%;
+    height: 98.6%;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.85);
+    z-index: 2;
+  }
+}
+
+.address {
+  position: relative;
+  padding: 20px 20px 14px 60px;
+
+  &__content {
+    position: relative;
+    max-width: 300px;
+  }
+
+  &__title {
+    padding-top: 160px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    color: $light-text-color;
+  }
+
+  &__text {
+    margin-bottom: 3px;
+    line-height: 28px;
+    color: $lighter-text-in-dark-block-color;
+  }
+
+  &__tel {
+    position: relative;
+    padding-left: 22px;
+    font-family: "TTFirsNeue", "Roboto", sans-serif;
+    color: $link-hover-color;
+    @include img-in-before;
+
+    &::before {
+      width: 22px;
+      height: 22px;
+      background-image: url("../img/decor/tel.svg");
+    }
+  }
+
+  &__button {
+    position: absolute;
+    padding: 0;
+    top: 24px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.request {
+  &__title {
+    margin-bottom: 5px;
+    font-family: "TTFirsNeue", "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &__text {
+    margin-bottom: 14px;
+    color: $lighter-text-in-light-block--color;
+  }
+}
+
+.form {
+  &__field {
+    margin-bottom: 22px;
+    @include form-field-style-light;
+  }
+
+  &__button {
+    @include button-effects-standart;
+  }
+}
+
+/* footer */
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: $lighter-text-in-dark-block-color;
+  background-color: $dark-bg-color;
+
+  &__company {
+    max-width: 263px;
+    font-family: "TTFirsNeue", "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__quote {
+    max-width: 361px;
+    quotes: none;
+  }
+}
+
+.footer-company__logo {
+  margin-bottom: 2px;
+}
+
+.socials__title {
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.social-item__link svg g,
+.social-item__link svg path {
+  transition: fill 0.3s ease-in-out;
+  
+  &:hover {
+    fill: $link-hover-color;
+  }
+
+  &:focus-visible {
+    fill: $link-focus-color;
+  }
+
+  &:active {
+    fill: $link-active-color;
+  }
+}
+
+

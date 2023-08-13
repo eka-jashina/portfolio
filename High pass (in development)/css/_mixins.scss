@@ -1,0 +1,134 @@
+@import '_variables.scss';
+
+@mixin button-style {
+    padding: 13px 20px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $light-text-color;
+    border: 3px solid $standart-button-color;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+    @media (max-width: 320px) {
+        padding: 10px 19px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+}
+
+@mixin link-effects {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover {
+        color: $link-hover-color;
+      }
+  
+      &:focus-visible {
+        outline: 0;
+        background-color: $link-focus-color;
+      }
+  
+      &:active {
+        color: $link-active-color;
+      }
+}
+
+@mixin button-effects-standart {
+    @include button-style;
+    background-color: $standart-button-color;
+
+    &:focus-visible {
+        outline: none;
+        background-color: $standart-button-focus-color;
+        border-color: $standart-button-focus-border-color;
+    }
+
+    &:hover {
+        background-color: $standart-button-hover-color;
+        border-color: $standart-button-hover-color;
+    }
+
+    &:active {
+        background-color: $standart-button-active-color;
+        border-color: $standart-button-active-color;
+    }
+}
+
+@mixin button-effects-transparent {
+    @include button-style;
+
+    &:focus-visible {
+        outline: none;
+        background-color: $transparent-button-focus-color;
+        border-color: $transparent-button-border-color;
+    }
+
+    &:hover {
+        background-color: $transparent-button-hover-color;
+        border-color: $transparent-button-hover-color;
+    }
+
+    &:active {
+        background-color: $transparent-button-active-color;
+        border-color: $transparent-button-active-color;
+    }
+}
+
+@mixin tag-style {
+    display: inline-block;
+    padding: 7px 11px;
+    align-self: flex-end;
+    font-size: 15px;
+    line-height: 16px;
+    color: $light-text-color;
+    background-color: $dark-bg-color;
+}
+
+@mixin img-in-before {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+@mixin form-field-style {
+    padding: 15px 23px;
+    border: none;
+    line-height: 19px;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+    @media (max-width: 320px) {
+        padding: 12px 23px;
+      }
+}
+
+@mixin form-field-style-dark {
+    @include form-field-style;
+    color: $light-text-color;
+    background-color: $form-bg-dark-color;
+
+    &:hover {
+        color: $form-accent-color;
+    }
+
+    &:focus-visible {
+        outline: none;
+        border: 1px solid $form-accent-color;
+    }
+}
+
+@mixin form-field-style-light {
+    @include form-field-style;
+    color: $dark-text-color;
+    background-color: $form-bg-light-color;
+
+    &:hover {
+        color: $form-accent-color;
+    }
+
+    &:focus-visible {
+        outline: none;
+        border: 1px solid $form-accent-color;
+    }
+}
