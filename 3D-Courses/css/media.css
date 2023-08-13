@@ -26,10 +26,15 @@
   }
 
   .hero__title {
+    max-width: 385px;
     margin-bottom: 14px;
     padding-top: 13px;
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .hero__text {
+    max-width: 345px;
   }
 
   .hero__button {
@@ -83,7 +88,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   /* glob */
 
   .container {
@@ -138,6 +143,11 @@
     height: 134px;
   }
 
+  .advantages__item {
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
   /* courses */
 
   .courses__item__content {
@@ -165,7 +175,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   /* glob */
 
   .section {
@@ -238,11 +248,6 @@
     width: 0;
     height: 0;
     background-image: none;
-  }
-
-  .advantages__item {
-    padding-top: 0;
-    padding-left: 110px;
   }
 
   /* courses */
