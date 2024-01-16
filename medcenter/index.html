@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный Центр кольпоскопии доктора Петренко</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="body">
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="header__logo flex">
+          <img src="img/content/logo.png" alt="Логотип учебного центра">
+      </div>
+      <h1 class="header__title">
+          Учебный Центр кольпоскопии доктора Петренко
+      </h1>
+      <nav class="header__nav nav">
+          <ul class="nav__list">
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Главная
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Курсы
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Автор курса
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Оборудование
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      РасписаНИЕ
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Отзывы
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Галерея
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Документы
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Клиника
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Форум
+                  </a>
+              </li>
+              <li class="nav__item">
+                  <a href="#" class="nav__link">
+                      Информация
+                  </a>
+              </li>
+          </ul>
+      </nav>
+      <a href="tel:+78612012203" class="header__tel">
+          +7 861 201-22-03
+      </a>
+      <button class="header__callback button" type="button" onclick="openModalAndLockScroll(event)" aria-controls="callbackModal">
+          Заказать звонок
+      </button>
+      <dialog class="header__callback-modal callback-modal" id="callbackModal" onclick="closeOnBackDropClick(event)" onclose="returnScroll()">
+          <form class="callback-modal__form form grid" method="post" action="#">
+              <h2 class="form__title">
+                  Заказать звонок
+              </h2>
+              <p class="form__text">
+                  Мы перезвоним в течение часа
+              </p>
+                  <label class="form__field form-field form-name">
+                      <input class="form-field__input" type="text" name="username" placeholder="Представьтесь" minlength="2" maxlength="30" required>
+                      <svg class="form-field__svg" width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.8549 22.9847V20.3688C15.8549 16.2711 12.533 12.9492 8.43524 12.9492V12.9492C4.3375 12.9492 1.01562 16.2711 1.01562 20.3688V22.9847" stroke="#80C2FF" stroke-width="2"/>
+                          <rect x="4.38672" y="1.51172" width="8.09878" height="8.09878" rx="4.04939" stroke="#80C2FF" stroke-width="2"/>
+                      </svg>
+                  </label>
+                  <label class="form__field form-field form-tel">
+                      <input class="form-field__input" type="tel" name="tel" placeholder="Ваш Телефон" pattern="^\+7[1-9]{10}$" required>
+                      <svg class="form-field__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.2438 12.8939L14.4301 12.3127C14.3719 12.3941 14.3153 12.4737 14.2602 12.5511C13.9392 13.002 13.6699 13.3803 13.4494 13.6356C13.4137 13.6208 13.3739 13.6048 13.3303 13.5872C12.797 13.3719 11.6915 12.9256 10.3259 11.7099L10.3259 11.7098C9.33134 10.8245 8.60158 9.73295 8.2751 9.2043C8.34908 9.11519 8.42505 9.03239 8.51395 8.9377C8.52894 8.92173 8.54459 8.90512 8.56081 8.88791C8.64842 8.79494 8.75255 8.68444 8.85714 8.5639C8.8721 8.54665 8.88708 8.52948 8.90205 8.5123C9.0935 8.29275 9.28553 8.07253 9.47197 7.67948C9.83779 6.94857 9.5319 6.26509 9.41476 6.02192C9.41352 6.01919 9.40901 6.00927 9.40011 5.98894C9.38989 5.96558 9.37664 5.93483 9.36037 5.89667C9.32788 5.82049 9.28576 5.72039 9.23608 5.60152C9.13684 5.36407 9.00995 5.05769 8.87468 4.73017C8.76699 4.4694 8.65385 4.19491 8.54559 3.93222C8.38296 3.53765 8.23132 3.16973 8.12561 2.91503L8.12471 2.91288C7.96596 2.5329 7.74558 2.11926 7.34095 1.8549C6.95648 1.6037 6.54157 1.58817 6.35081 1.58103C6.3408 1.58066 6.33141 1.5803 6.32267 1.57994C6.31097 1.57936 6.29891 1.57874 6.2865 1.57811C6.1529 1.57132 5.97935 1.5625 5.78854 1.5625C5.08497 1.5625 4.19514 1.76189 3.58424 2.38545L3.58405 2.38564C3.57224 2.3977 3.5599 2.41026 3.54707 2.42333C3.04955 2.92967 1.80859 4.19262 1.80859 6.63169C1.80859 7.90243 2.26577 9.09446 2.70478 9.95995C3.12725 10.7928 3.57517 11.4036 3.71103 11.5888C3.71867 11.5992 3.72533 11.6083 3.73094 11.616L3.74333 11.6327C3.74162 11.6304 3.7421 11.6311 3.74644 11.6373C3.75206 11.6453 3.76413 11.6625 3.78625 11.6945C3.79236 11.7034 3.79895 11.7129 3.80598 11.7231C3.83565 11.7661 3.87326 11.8205 3.91683 11.8829C4.02558 12.0387 4.17426 12.2481 4.36037 12.4969C4.7321 12.9937 5.25365 13.6483 5.90916 14.3527C7.21048 15.7511 9.08503 17.395 11.411 18.3586C13.1178 19.0663 14.2858 19.4136 15.1591 19.5521C16.0751 19.6974 16.6423 19.6082 17.106 19.5095L17.1089 19.5089C17.7955 19.3605 18.5404 19.042 19.1736 18.6134C19.7888 18.1971 20.4228 17.5919 20.7001 16.8088L20.7003 16.8082C20.9047 16.23 21.0102 15.6867 21.0486 15.2454C21.0677 15.0257 21.0714 14.817 21.0578 14.6319C21.048 14.4983 21.0211 14.2148 20.8774 13.9608L20.8774 13.9608L20.8736 13.9542C20.6739 13.6072 20.3589 13.4262 20.2011 13.34C20.104 13.2869 19.9586 13.2166 19.8284 13.1535C19.7585 13.1197 19.693 13.088 19.6415 13.0622L19.6385 13.0607C19.4222 12.953 18.7909 12.6405 18.163 12.3373C17.5827 12.057 16.9078 11.7362 16.6315 11.6373C16.3112 11.5182 15.9088 11.4469 15.4792 11.5587C15.0311 11.6753 14.6814 11.9578 14.4277 12.3161L15.2438 12.8939ZM15.2438 12.8939C15.5353 12.4823 15.9032 12.4313 16.2894 12.577M15.2438 12.8939C15.1884 12.9715 15.1331 13.0493 15.0781 13.1266C14.7265 13.6211 14.3874 14.0981 14.1054 14.4021M16.2894 12.577L13.4119 13.7589L13.4145 13.7527M16.2894 12.577C16.6828 12.7136 18.7648 13.7427 19.1928 13.9559C19.2812 14.0003 19.3634 14.0398 19.4391 14.0763C19.7299 14.2163 19.9246 14.31 20.007 14.4531M16.2894 12.577L20.007 14.4531M14.1054 14.4021L13.4159 13.754L13.4547 13.6611C13.4735 13.6527 13.487 13.6502 13.4925 13.6494C13.495 13.6491 13.4962 13.649 13.4962 13.649C13.4962 13.649 13.4939 13.6491 13.4894 13.6485C13.4817 13.6474 13.4717 13.6449 13.461 13.6404L13.4519 13.6624M14.1054 14.4021C13.8486 14.6753 13.4296 14.71 13.0781 14.5642M14.1054 14.4021L13.0781 14.5642M13.4519 13.6624C13.4507 13.6629 13.4494 13.6635 13.4482 13.6641C13.425 13.6754 13.3995 13.6931 13.3768 13.7172L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.0781 14.5642C13.0398 14.5483 12.9959 14.5305 12.9466 14.5106C12.39 14.2858 11.1554 13.7872 9.661 12.4568C8.40054 11.3347 7.54444 9.93767 7.29672 9.51873M13.0781 14.5642L8.13367 9.37699C8.13367 9.37698 8.13395 9.37654 8.13454 9.37566C8.13787 9.37029 8.15034 9.34882 8.16224 9.3139C8.17193 9.28546 8.17935 9.2537 8.18346 9.22011C8.18458 9.21088 8.18546 9.20151 8.18606 9.19204C8.18788 9.1635 8.18723 9.13399 8.18351 9.10435C8.17761 9.05738 8.16622 9.02789 8.16194 9.01801L8.05052 9.08249L8.03333 9.09244L7.29672 9.51873M7.29672 9.51873L8.0269 9.08697L8.04375 9.07701L8.1575 9.00975C8.15849 9.01143 8.1595 9.01313 8.16051 9.01484M7.29672 9.51873C7.0535 9.09847 7.2633 8.85203 7.45719 8.62427C7.46078 8.62005 7.46436 8.61584 7.46794 8.61164C7.59295 8.45696 7.71426 8.32817 7.83618 8.19873C7.92388 8.10563 8.01189 8.01219 8.10181 7.90854C8.11517 7.89315 8.12816 7.87821 8.14081 7.86367C8.33175 7.64412 8.44546 7.51339 8.57358 7.24006L8.16051 9.01484M8.16051 9.01484C8.16034 9.01449 8.16026 9.01431 8.16026 9.01431C8.16026 9.01431 8.16049 9.01475 8.16097 9.01562L8.16051 9.01484ZM20.007 14.4531C20.109 14.6334 20.109 15.4804 19.7575 16.475L20.007 14.4531ZM6.27669 2.57889C6.70474 2.59711 6.91967 2.62261 7.202 3.29838L5.78854 2.5625C5.95264 2.5625 6.10165 2.57004 6.23696 2.57689C6.25034 2.57757 6.26358 2.57824 6.27669 2.57889Z" stroke="#80C2FF" stroke-width="2" stroke-linejoin="round"/>
+                      </svg>
+                  </label>
+                  <div class="form__agreement agreement flex">
+                      <input class="agreement__checkbox checkbox" id="callback-checkbox" type="checkbox" checked>
+                      <label class="agreement__desc" for="callback-checkbox">
+                          Отправляя заявку, вы принимаете условия политики конфиденциальности
+                      </label>
+                  </div>
+                  <button class="form__button button" type="submit">
+                      Заказать
+                  </button>
+                  <button class="form__close" type="button" onclick="window.callbackModal.close(); returnScroll(event)">
+                      <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6.72461 14.8923L13.3533 8.26364L6.63328 1.54361" stroke="white" stroke-width="2"/>
+                          <path d="M19.9824 1.54468L13.3537 8.17337L20.0738 14.8934" stroke="white" stroke-width="2"/>
+                      </svg>
+                  </button>
+          </form>
+      </dialog>
+      <ul class="header__social social flex">
+          <li class="social__item">
+              <a href="#" class="social__link social-link-header flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="21" height="22" viewBox="0 0 169.063 169.063">
+                      <path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z" fill="#ffffff"/>
+                      <path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22a11.053 11.053 0 0 0-3.23 7.78c0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z" fill="#ffffff"/>
+                  </svg>
+              </a>
+          </li>
+          <li class="social__item">
+              <a href="#" class="social__link social-link-header flex">
+                  <svg width="21" height="22" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.3029 18.2597C2.207 18.5456 2.27997 18.861 2.49165 19.0758C2.70333 19.2905 3.01775 19.3679 3.30495 19.2761L6.14001 18.3698C7.50931 19.1948 9.10753 19.6658 10.8178 19.6658C15.8364 19.6658 19.9158 15.5838 19.9158 10.5657C19.9158 5.54769 15.8364 1.46562 10.8178 1.46562H10.8137C5.79516 1.46562 1.71562 5.54659 1.71562 10.5657C1.71562 12.4057 2.26435 14.1231 3.20975 15.5564L2.3029 18.2597ZM11.4178 13.7942L11.4176 13.7941C9.41661 12.9651 8.05101 11.0178 7.69091 10.5043C7.66299 10.4645 7.64112 10.4333 7.62546 10.4119C7.62239 10.4077 7.61886 10.4029 7.6149 10.3975C7.54573 10.3031 7.3451 10.0293 7.15569 9.6559C6.94964 9.24969 6.79337 8.79506 6.79337 8.37969C6.79337 7.54917 7.17347 7.16327 7.38959 6.94384C7.39684 6.93649 7.4039 6.92932 7.41075 6.92233C7.41341 6.92048 7.43139 6.90767 7.47422 6.89347C7.53089 6.87468 7.60687 6.86189 7.69074 6.86189C7.7241 6.86189 7.75599 6.86259 7.78847 6.86373C7.83765 6.9826 7.9008 7.13582 7.96941 7.3023C8.14974 7.73985 8.36783 8.26903 8.46958 8.50722C8.45789 8.52086 8.44539 8.53524 8.42993 8.55301C8.42217 8.56194 8.41365 8.57173 8.40413 8.58271C8.36446 8.62843 8.32699 8.66823 8.27757 8.72074C8.26715 8.7318 8.25621 8.74343 8.2446 8.75579C8.18392 8.82043 8.11088 8.89935 8.03354 8.99425C8.03221 8.99577 8.03074 8.99745 8.02912 8.99929C7.98363 9.05113 7.82674 9.22992 7.74638 9.4658C7.63406 9.79548 7.68733 10.131 7.8574 10.4249L7.85737 10.4249L7.86118 10.4313C8.01264 10.6875 8.55113 11.5711 9.36458 12.2952C10.319 13.1449 11.1257 13.4708 11.4607 13.6061C11.4888 13.6175 11.5137 13.6276 11.535 13.6364L11.5365 13.6371C11.9475 13.8074 12.5727 13.8199 13.0109 13.3537L13.0146 13.3497C13.1985 13.1515 13.4079 12.8612 13.5922 12.6019C13.612 12.6109 13.6328 12.6205 13.6547 12.6306C13.7954 12.6957 13.9677 12.7779 14.1436 12.8629C14.4936 13.0319 14.8469 13.2068 14.9681 13.2671C14.9802 13.2732 14.9922 13.2792 15.004 13.285C14.9851 13.4079 14.9505 13.5576 14.8932 13.7198L15.6474 13.9864L14.8933 13.7194C14.8744 13.7727 14.7835 13.9103 14.5472 14.0703C14.3257 14.2202 14.0633 14.3295 13.8506 14.3756C13.7006 14.4075 13.5531 14.4357 13.2428 14.3865C12.8974 14.3317 12.3449 14.1786 11.4178 13.7942ZM15.2531 13.4081C15.253 13.4081 15.2527 13.4079 15.2522 13.4076L15.2531 13.4081Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+          </li>
+          <li class="social__item">
+              <a href="#" class="social__link social-link-header flex">
+                  <svg width="21" height="22" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.04111 11.2837C7.88679 11.4222 7.79232 11.6153 7.77761 11.8222L7.48854 15.888C7.4728 16.1095 7.5498 16.3275 7.70113 16.49C7.85246 16.6525 8.0645 16.7447 8.28653 16.7447C8.62057 16.7447 8.90872 16.6697 9.16431 16.5223C9.38038 16.3978 9.54428 16.2344 9.64136 16.1377C9.64517 16.1339 9.64888 16.1302 9.65248 16.1266L11.1011 14.7421L14.5781 17.2884C14.6047 17.3079 14.6325 17.3258 14.6613 17.3418C15.1233 17.5993 15.7253 17.7788 16.31 17.5139C16.8918 17.2504 17.1633 16.6792 17.2856 16.1429L17.2856 16.1429L17.2879 16.1321L19.9191 3.80289C19.9215 3.7935 19.9237 3.78406 19.9257 3.77456C20.0721 3.09223 19.9977 2.37732 19.4992 1.8976C18.9911 1.40866 18.2974 1.40621 17.7526 1.60898L17.7526 1.60895L17.7457 1.61161L2.24397 7.54652L2.24397 7.54652L2.24052 7.54785C1.92304 7.67109 1.63423 7.82673 1.40719 8.02563C1.18464 8.22059 0.957992 8.51601 0.923156 8.91097C0.886002 9.33222 1.08261 9.67122 1.31946 9.89264C1.54442 10.1029 1.83015 10.2376 2.11256 10.3252C2.11263 10.3252 2.1127 10.3252 2.11278 10.3253C2.11295 10.3253 2.11313 10.3254 2.11331 10.3254L6.07572 11.5579C6.29832 11.6271 6.54005 11.5958 6.73767 11.4722L10.3448 9.21512L8.04111 11.2837Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+          </li>
+      </ul>
+      <button class="header__address" type="button" onclick="openModalAndLockScroll(event)" aria-controls="addressModal">
+          г. Краснодар, пр-т Чекистов, д. 42
+      </button>
+      <dialog class="header__address-modal modal" id="addressModal" onclick="closeOnBackDropClick(event)" onclose="returnScroll()">
+          <form class="modal__container">
+              <div class="modal__head modal-head">
+                  <h2 class="modal-head__title">
+                      Адрес
+                  </h2>
+                  <div class="modal-head__desc">
+                      Учебный Центр кольпоскопии доктора Петренко
+                  </div>
+              </div>
+              <div class="modal__wrapper">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae3a269a2b32eea67d75bf97d5c585a6edc611ee0ff0c1902d4072ca17b1e6103&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+              <button class="modal__close" type="button" onclick="window.addressModal.close(); returnScroll(event)">
+                  <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.65625 15.3174L14.2849 8.68875L7.56492 1.96872" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M20.9141 1.96979L14.2854 8.59848L21.0054 15.3185" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+              </button>
+          </form>
+      </dialog>
+  </header>
+  <main class="main flex">
+      <div class="breadcrumbs">
+          <div class="container">
+              <span class="breadcrumbs__name">
+                  ООО "Центр кольпоскопии и цервикальной патологии"
+              </span>
+          </div>
+      </div>
+      <section class="section hero">
+          <div class="container hero__container grid">
+              <div class="hero__bg-left-top bg swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide hero-slide hero-slide-1">
+                          <p class="bg__text">
+                              Курсы по кольпоскопии, заболеваниям шейки матки, влагалища и вульвы
+                          </p>
+                      </div>
+                      <div class="swiper-slide hero-slide hero-slide-2">
+                          <p class="bg__text">
+                              Лекции, семинары и круглые столы                            </p>
+                      </div>
+                      <div class="swiper-slide hero-slide hero-slide-3">
+                          <p class="bg__text">
+                              Современное оборудование: кольпоскопы, лабораторные микроскопы, электрохирургические и лазерные аппараты, медицинские тренажеры и муляжи                            </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="hero__bg-right-top swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide hero-slide hero-slide-1"></div>
+                      <div class="swiper-slide hero-slide hero-slide-2"></div>
+                      <div class="swiper-slide hero-slide hero-slide-3"></div>
+                  </div>
+              </div>
+              <div class="hero__bg-left-bottom swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide hero-slide hero-slide-1"></div>
+                      <div class="swiper-slide hero-slide hero-slide-2"></div>
+                      <div class="swiper-slide hero-slide hero-slide-3"></div>
+                  </div>
+                  <div class="hero__navigation swiper-navigation flex">
+                      <div class="swiper-button-prev hero-button-prev"></div>
+                      <div class="swiper-pagination hero-pagination flex"></div>
+                      <div class="swiper-button-next hero-button-next"></div>
+                  </div>
+              </div>
+              <div class="hero__bg-right-bottom swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide hero-slide hero-slide-1"></div>
+                      <div class="swiper-slide hero-slide hero-slide-2"></div>
+                      <div class="swiper-slide hero-slide hero-slide-3"></div>
+                  </div>
+              </div>
+              <form class="hero__form form" id="heroForm" method="post" action="#">
+                  <h2 class="form__title">
+                      Запишитесь на курс
+                  </h2>
+                  <p class="form__text">
+                      получите индивидуальные условия обучения
+                  </p>
+                      <label class="form__field form-field form-name">
+                          <input class="form-field__input" type="text" name="username" placeholder="Представьтесь" minlength="2" maxlength="30" required>
+                          <svg class="form-field__svg" width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.8549 22.9847V20.3688C15.8549 16.2711 12.533 12.9492 8.43524 12.9492V12.9492C4.3375 12.9492 1.01562 16.2711 1.01562 20.3688V22.9847" stroke="#80C2FF" stroke-width="2"/>
+                              <rect x="4.38672" y="1.51172" width="8.09878" height="8.09878" rx="4.04939" stroke="#80C2FF" stroke-width="2"/>
+                          </svg>
+                      </label>
+                      <label class="form__field form-field form-mail">
+                          <input class="form-field__input" type="email" name="email" placeholder="Ваш Email" required>
+                          <svg class="form-field__svg" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.20201 3.29961L8.4118 7.68681C9.55172 8.64673 11.2235 8.62437 12.3373 7.6343L15.5097 4.8144M16.2478 16.3276L4.62891 16.3276C2.97205 16.3276 1.62891 14.9845 1.62891 13.3276L1.62891 4.48841C1.62891 2.83155 2.97205 1.48841 4.62891 1.48841L16.2478 1.4884C17.9046 1.4884 19.2478 2.83155 19.2478 4.4884L19.2478 13.3276C19.2478 14.9845 17.9046 16.3276 16.2478 16.3276Z" stroke="#80C2FF" stroke-width="2"/>
+                          </svg>
+                      </label>
+                      <label class="form__field form-field form-tel">
+                          <input class="form-field__input" type="tel" name="tel" placeholder="Ваш Телефон" pattern="^\+7[1-9]{10}$" required>
+                          <svg class="form-field__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.2438 12.8939L14.4301 12.3127C14.3719 12.3941 14.3153 12.4737 14.2602 12.5511C13.9392 13.002 13.6699 13.3803 13.4494 13.6356C13.4137 13.6208 13.3739 13.6048 13.3303 13.5872C12.797 13.3719 11.6915 12.9256 10.3259 11.7099L10.3259 11.7098C9.33134 10.8245 8.60158 9.73295 8.2751 9.2043C8.34908 9.11519 8.42505 9.03239 8.51395 8.9377C8.52894 8.92173 8.54459 8.90512 8.56081 8.88791C8.64842 8.79494 8.75255 8.68444 8.85714 8.5639C8.8721 8.54665 8.88708 8.52948 8.90205 8.5123C9.0935 8.29275 9.28553 8.07253 9.47197 7.67948C9.83779 6.94857 9.5319 6.26509 9.41476 6.02192C9.41352 6.01919 9.40901 6.00927 9.40011 5.98894C9.38989 5.96558 9.37664 5.93483 9.36037 5.89667C9.32788 5.82049 9.28576 5.72039 9.23608 5.60152C9.13684 5.36407 9.00995 5.05769 8.87468 4.73017C8.76699 4.4694 8.65385 4.19491 8.54559 3.93222C8.38296 3.53765 8.23132 3.16973 8.12561 2.91503L8.12471 2.91288C7.96596 2.5329 7.74558 2.11926 7.34095 1.8549C6.95648 1.6037 6.54157 1.58817 6.35081 1.58103C6.3408 1.58066 6.33141 1.5803 6.32267 1.57994C6.31097 1.57936 6.29891 1.57874 6.2865 1.57811C6.1529 1.57132 5.97935 1.5625 5.78854 1.5625C5.08497 1.5625 4.19514 1.76189 3.58424 2.38545L3.58405 2.38564C3.57224 2.3977 3.5599 2.41026 3.54707 2.42333C3.04955 2.92967 1.80859 4.19262 1.80859 6.63169C1.80859 7.90243 2.26577 9.09446 2.70478 9.95995C3.12725 10.7928 3.57517 11.4036 3.71103 11.5888C3.71867 11.5992 3.72533 11.6083 3.73094 11.616L3.74333 11.6327C3.74162 11.6304 3.7421 11.6311 3.74644 11.6373C3.75206 11.6453 3.76413 11.6625 3.78625 11.6945C3.79236 11.7034 3.79895 11.7129 3.80598 11.7231C3.83565 11.7661 3.87326 11.8205 3.91683 11.8829C4.02558 12.0387 4.17426 12.2481 4.36037 12.4969C4.7321 12.9937 5.25365 13.6483 5.90916 14.3527C7.21048 15.7511 9.08503 17.395 11.411 18.3586C13.1178 19.0663 14.2858 19.4136 15.1591 19.5521C16.0751 19.6974 16.6423 19.6082 17.106 19.5095L17.1089 19.5089C17.7955 19.3605 18.5404 19.042 19.1736 18.6134C19.7888 18.1971 20.4228 17.5919 20.7001 16.8088L20.7003 16.8082C20.9047 16.23 21.0102 15.6867 21.0486 15.2454C21.0677 15.0257 21.0714 14.817 21.0578 14.6319C21.048 14.4983 21.0211 14.2148 20.8774 13.9608L20.8774 13.9608L20.8736 13.9542C20.6739 13.6072 20.3589 13.4262 20.2011 13.34C20.104 13.2869 19.9586 13.2166 19.8284 13.1535C19.7585 13.1197 19.693 13.088 19.6415 13.0622L19.6385 13.0607C19.4222 12.953 18.7909 12.6405 18.163 12.3373C17.5827 12.057 16.9078 11.7362 16.6315 11.6373C16.3112 11.5182 15.9088 11.4469 15.4792 11.5587C15.0311 11.6753 14.6814 11.9578 14.4277 12.3161L15.2438 12.8939ZM15.2438 12.8939C15.5353 12.4823 15.9032 12.4313 16.2894 12.577M15.2438 12.8939C15.1884 12.9715 15.1331 13.0493 15.0781 13.1266C14.7265 13.6211 14.3874 14.0981 14.1054 14.4021M16.2894 12.577L13.4119 13.7589L13.4145 13.7527M16.2894 12.577C16.6828 12.7136 18.7648 13.7427 19.1928 13.9559C19.2812 14.0003 19.3634 14.0398 19.4391 14.0763C19.7299 14.2163 19.9246 14.31 20.007 14.4531M16.2894 12.577L20.007 14.4531M14.1054 14.4021L13.4159 13.754L13.4547 13.6611C13.4735 13.6527 13.487 13.6502 13.4925 13.6494C13.495 13.6491 13.4962 13.649 13.4962 13.649C13.4962 13.649 13.4939 13.6491 13.4894 13.6485C13.4817 13.6474 13.4717 13.6449 13.461 13.6404L13.4519 13.6624M14.1054 14.4021C13.8486 14.6753 13.4296 14.71 13.0781 14.5642M14.1054 14.4021L13.0781 14.5642M13.4519 13.6624C13.4507 13.6629 13.4494 13.6635 13.4482 13.6641C13.425 13.6754 13.3995 13.6931 13.3768 13.7172L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.0781 14.5642C13.0398 14.5483 12.9959 14.5305 12.9466 14.5106C12.39 14.2858 11.1554 13.7872 9.661 12.4568C8.40054 11.3347 7.54444 9.93767 7.29672 9.51873M13.0781 14.5642L8.13367 9.37699C8.13367 9.37698 8.13395 9.37654 8.13454 9.37566C8.13787 9.37029 8.15034 9.34882 8.16224 9.3139C8.17193 9.28546 8.17935 9.2537 8.18346 9.22011C8.18458 9.21088 8.18546 9.20151 8.18606 9.19204C8.18788 9.1635 8.18723 9.13399 8.18351 9.10435C8.17761 9.05738 8.16622 9.02789 8.16194 9.01801L8.05052 9.08249L8.03333 9.09244L7.29672 9.51873M7.29672 9.51873L8.0269 9.08697L8.04375 9.07701L8.1575 9.00975C8.15849 9.01143 8.1595 9.01313 8.16051 9.01484M7.29672 9.51873C7.0535 9.09847 7.2633 8.85203 7.45719 8.62427C7.46078 8.62005 7.46436 8.61584 7.46794 8.61164C7.59295 8.45696 7.71426 8.32817 7.83618 8.19873C7.92388 8.10563 8.01189 8.01219 8.10181 7.90854C8.11517 7.89315 8.12816 7.87821 8.14081 7.86367C8.33175 7.64412 8.44546 7.51339 8.57358 7.24006L8.16051 9.01484M8.16051 9.01484C8.16034 9.01449 8.16026 9.01431 8.16026 9.01431C8.16026 9.01431 8.16049 9.01475 8.16097 9.01562L8.16051 9.01484ZM20.007 14.4531C20.109 14.6334 20.109 15.4804 19.7575 16.475L20.007 14.4531ZM6.27669 2.57889C6.70474 2.59711 6.91967 2.62261 7.202 3.29838L5.78854 2.5625C5.95264 2.5625 6.10165 2.57004 6.23696 2.57689C6.25034 2.57757 6.26358 2.57824 6.27669 2.57889Z" stroke="#80C2FF" stroke-width="2" stroke-linejoin="round"/>
+                          </svg>
+                      </label>
+                      <select class="form__field form-field select-course" id="form-course">
+                          <option class="select__option" value="">
+                              Выберите курс
+                          </option>
+                          <option class="select__option" value="course-1">
+                              Базовый курс кольпоскопии
+                          </option>
+                          <option class="select__option" value="course-2">
+                              Современные аспекты клинической кольпоскопии
+                          </option>
+                          <option class="select__option" value="course-3">
+                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                          </option>
+                          <option class="select__option" value="course-4">
+                              Лазерная хирургия в амбулаторной гинекологии
+                          </option>
+                      </select>
+                      <select class="form__field form-field select-date" id="form-date">
+                          <option value="">
+                              Дата начала
+                          </option>
+                          <option class="select__option" value="date-february">
+                              4 февраля 2022 года
+                          </option>
+                          <option class="select__option" value="date-march">
+                              10 марта 2022 года
+                          </option>
+                          <option class="select__option" value="date-aoril">
+                              15 апреля 2022 года
+                          </option>
+                      </select>
+                      <div class="form__agreement agreement flex">
+                          <input class="agreement__checkbox checkbox" id="hero-form-checkbox" type="checkbox" checked>
+                          <label class="agreement__desc" for="hero-form-checkbox">
+                              Отправляя заявку, вы принимаете условия политики конфиденциальности
+                          </label>
+                      </div>
+                      <button class="form__button button" type="submit">
+                          Записаться
+                      </button>
+              </form>
+              <div class="hero__achievements achievements">
+                  <ul class="achievements__list flex">
+                      <li class="achievements__item achievement achievement-courses">
+                          <span class="achievement__title">
+                              > 500
+                          </span>
+                          <span class="achievement__text">
+                              Курсов проведено
+                          </span>
+                      </li>
+                      <li class="achievements__item achievement achievement-diploma">
+                          <span class="achievement__title">
+                              1257
+                          </span>
+                          <span class="achievement__text">
+                              Дипломов выдано
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+      <section class="section programms">
+          <div class="container">
+              <div class="programms__head grid">
+                  <h2 class="section__title programms__title">
+                      Программы дополнительного профессионального образования
+                  </h2>
+                  <p class="programms__text">
+                      Обучение проводится в специализированном классе учебного центра с использованием мультимедийного оборудования и гинекологического кабинета клиники по адресу: г. Краснодар, проспект Чекистов, 42
+                  </p>
+              </div>
+              <ol class="programms__list grid">
+                  <li class="programms__item programm programm-1 flex">
+                      <div class="programm__head programm-head flex">
+                          <h3 class="programm-head__title">
+                              Базовый курс кольпоскопии
+                          </h3>
+                          <a class="programm-head__more link-more" href="#">
+                              <span class="link-more__text">
+                                  подробнее
+                              </span>
+                              <svg class="link-more__arrow" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.966797 14.1523L7.59549 7.52365L0.875463 0.803621" stroke="white"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="programm__details programm-details flex">
+                          <div class="programm-details__duration duration flex">
+                              <span class="duration__hours">
+                                  36 часов
+                              </span>
+                              <span class="duration__days">
+                                  (6 дней)
+                              </span>
+                          </div>
+                          <div class="programm-details__price">
+                              40 000 ₽
+                          </div>
+                      </div>
+                  </li>
+                  <li class="programms__item programm programm-2 flex">
+                      <div class="programm__head programm-head flex">
+                          <h3 class="programm-head__title">
+                              Современные аспекты клинической кольпоскопии
+                          </h3>
+                          <a class="programm-head__more link-more" href="#">
+                              <span class="link-more__text">
+                                  подробнее
+                              </span>
+                              <svg class="link-more__arrow" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.966797 14.1523L7.59549 7.52365L0.875463 0.803621" stroke="white"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="programm__details programm-details flex">
+                          <div class="programm-details__duration duration flex">
+                              <span class="duration__hours">
+                                  36 часов
+                              </span>
+                              <span class="duration__days">
+                                  (6 дней)
+                              </span>
+                          </div>
+                          <div class="programm-details__price">
+                              33 000 ₽
+                          </div>
+                      </div>
+                  </li>
+                  <li class="programms__item programm programm-3 flex">
+                      <div class="programm__head programm-head flex">
+                          <h3 class="programm-head__title">
+                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                          </h3>
+                          <a class="programm-head__more link-more" href="#">
+                              <span class="link-more__text">
+                                  подробнее
+                              </span>
+                              <svg class="link-more__arrow" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.966797 14.1523L7.59549 7.52365L0.875463 0.803621" stroke="white"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="programm__details programm-details flex">
+                          <div class="programm-details__duration duration flex">
+                              <span class="duration__hours">
+                                  18 часов
+                              </span>
+                              <span class="duration__days">
+                                  (6 дней)
+                              </span>
+                          </div>
+                          <div class="programm-details__price">
+                              25 000 ₽
+                          </div>
+                      </div>
+                  </li>
+                  <li class="programms__item programm programm-4 flex">
+                      <div class="programm__head programm-head flex">
+                          <h3 class="programm-head__title">
+                              Лазерная хирургия в амбулаторной гинекологии
+                          </h3>
+                          <a class="programm-head__more link-more" href="#">
+                              <span class="link-more__text">
+                                  подробнее
+                              </span>
+                              <svg class="link-more__arrow" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0.966797 14.1523L7.59549 7.52365L0.875463 0.803621" stroke="white"/>
+                              </svg>
+                          </a>
+                      </div>
+                      <div class="programm__details programm-details flex">
+                          <div class="programm-details__duration duration flex">
+                              <span class="duration__hours">
+                                  18 часов
+                              </span>
+                              <span class="duration__days">
+                                  (6 дней)
+                              </span>
+                          </div>
+                          <div class="programm-details__price">
+                              15 000 ₽
+                          </div>
+                      </div>
+                  </li>
+                  <li class="programms__item schedule">
+                      <h3 class="schedule__title">
+                          Расписание занятий
+                      </h3>
+                      <button class="schedule__button button" type="button" onclick="openModalAndLockScroll(event)" aria-controls="scheduleModal">
+                          Смотреть
+                      </button>
+                  </li>
+                  <li class="programms__item organisation">
+                    <ul class="organisation__education education flex">
+                      <li class="education__item education-item education-item-1 flex">
+                          <span class="education-item__title">
+                              форма обучения:
+                          </span>
+                          <span class="education-item__text">
+                              очная
+                          </span>
+                      </li>
+                      <li class="education__item education-item education-item-2 flex">
+                          <span class="education-item__title">
+                              аттестация:
+                          </span>
+                          <span class="education-item__text">
+                              тестовый контроль
+                          </span>
+                      </li>
+                      </ul>
+                  </li>
+              </ol>
+              <dialog class="programms__schedule-modal modal" id="scheduleModal" onclick="closeOnBackDropClick(event)" onclose="returnScroll()">
+                  <form class="modal__container">
+                      <div class="modal__head modal-head">
+                          <h2 class="modal-head__title">
+                              Расписание
+                          </h2>
+                          <div class="modal-head__desc">
+                              на 2022 год
+                          </div>
+                      </div>
+                      <div class="modal__wrapper">
+                          <div class="modal__content modal-content" data-simplebar data-simplebar-auto-hide="false">
+                              <div class="modal-content__month month">
+                                  <h3 class="month__title">
+                                      Февраль
+                                  </h3>
+                                  <ul class="month__list flex">
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Базовый курс кольпоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      07—12.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      02
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      14—16.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      02
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Заболевания вульвы. Основы вульвоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      17—19.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      02
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="modal-content__month month">
+                                  <h3 class="month__title">
+                                      Март
+                                  </h3>
+                                  <ul class="month__list flex">
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Базовый курс кольпоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      14—19.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      03
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      21—23.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      03
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Заболевания вульвы. Основы вульвоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      24—26.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      03
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="modal-content__month month">
+                                  <h3 class="month__title">
+                                      Апрель
+                                  </h3>
+                                  <ul class="month__list flex">
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Заболевания вульвы. Основы вульвоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      14—16.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      04
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Базовый курс кольпоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      18—23.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      04
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      25—27.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      04
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Лазерная хирургия в амбулаторной гинекологи                                </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      28—30.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      04
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="modal-content__month month">
+                                  <h3 class="month__title">
+                                      Май
+                                  </h3>
+                                  <ul class="month__list flex">
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      15—17.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      05
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Лазерная хирургия в амбулаторной гинекологи                                </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      18—20.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      05
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="modal-content__month month">
+                                  <h3 class="month__title">
+                                      Июнь
+                                  </h3>
+                                  <ul class="month__list flex">
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Базовый курс кольпоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      07—12.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      06
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Электрорадиоволновая хирургия в амбулаторной гинекологии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      14—16.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      06
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                      <li class="month__item month-item">
+                                          <h4 class="month-item__title">
+                                              Заболевания вульвы. Основы вульвоскопии
+                                          </h4>
+                                          <div class="month-item__details month-details">
+                                              <span class="month-details__date date">
+                                                  <span class="date__day">
+                                                      17—19.
+                                                  </span>
+                                                  <span class="date__month">
+                                                      06
+                                                  </span>
+                                              </span>
+                                              <button class="month-details__button">
+                                                  Записаться
+                                              </button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <button class="modal__close" type="button" onclick="window.scheduleModal.close(); returnScroll(event)">
+                          <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.65625 15.3174L14.2849 8.68875L7.56492 1.96872" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                              <path d="M20.9141 1.96979L14.2854 8.59848L21.0054 15.3185" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                  </form>
+              </dialog>
+          </div>
+      </section>
+      <section class="section author">
+          <div class="container author__container grid">
+              <div class="author__content">
+                  <h2 class="section__title author__title author-title flex">
+                      <span class="author-title__desc">
+                          Автотр курса
+                      </span>
+                      <span class="author-title__name">
+                          Петренко <br>Сергей Иванович
+                      </span>
+                  </h2>
+                  <p class="author__text">
+                      Стаж работы <span class="accent-text">27 лет</span>
+                  </p>
+                  <p class="author__text">
+                      Учредитель и руководитель ООО «Центр кольпоскопии и цервикальной патологии», врач акушер-гинеколог, преподаватель дополнительного профессиональонго образования.
+                  </p>
+                  <p class="author__text">
+                      Автор российского атласа по кольпоскопии («Кольпоскопия. Атлас» Т.Н.Бебнева, С.И.Петренко Под редакцией В.Е.Радзинского).
+                  </p>
+              </div>
+              <picture class="author__photo">
+                <source media="(max-width: 1024px)" srcset="img/content/petrenko-1024.jpg" type="image/jpeg">
+                <img src="img/content/petrenko.jpg" alt="">
+              </picture>
+          </div>
+      </section>
+      <section class="section news">
+          <div class="container news__container swiper">
+                  <h2 class="section__title">
+                      Новости
+                  </h2>
+                  <div class="news__navigation swiper-navigation flex">
+                      <div class="swiper-button-prev news-button-prev"></div>
+                      <div class="swiper-pagination news-pagination"></div>
+                      <div class="swiper-button-next news-button-next"></div>
+                  </div>
+                  <ul class="news__list swiper-wrapper">
+                      <li class="news__item news-item flex swiper-slide">
+                          <img class="news-item__photo" src="img/content/news-14-10-21-4.jpg" alt="">
+                          <div class="news-item__content">
+                              <h3 class="news-item__title">
+                                  Что такое кризис трех лет, и как преодолеть
+                              </h3>
+                              <p class="news-item__desc">
+                                  Обучение проводится в специализированном классе учебного центра с использованием мультимедийного оборудования и
+                              </p>
+                          </div>
+                          <div class="news-item__details flex">
+                              <span class="news-item__date">
+                                  14.10.2021
+                              </span>
+                              <a class="news-item__more link-more" href="#">
+                                  <span class="link-more__text">
+                                      Читать
+                                  </span>
+                                  <svg class="link-more__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.06836 19.0059L8.81571 11.3499C9.60138 10.5735 9.60138 9.31474 8.81571 8.53834L0.942011 0.75755" stroke="#0089ED"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="news__item news-item flex swiper-slide">
+                          <img class="news-item__photo" src="img/content/news-14-10-21-3.jpg" alt="">
+                          <div class="news-item__content">
+                              <h3 class="news-item__title">
+                                  Что такое кризис трех лет, и как преодолеть
+                              </h3>
+                          </div>
+                          <div class="news-item__details flex">
+                              <span class="news-item__date">
+                                  14.10.2021
+                              </span>
+                              <a class="news-item__more link-more" href="#">
+                                  <span class="link-more__text">
+                                      Смотреть
+                                  </span>
+                                  <svg class="link-more__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.06836 19.0059L8.81571 11.3499C9.60138 10.5735 9.60138 9.31474 8.81571 8.53834L0.942011 0.75755" stroke="#0089ED"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="news__item news-item flex swiper-slide">
+                          <img class="news-item__photo" src="img/content/news-14-10-21-2.jpg" alt="">
+                          <div class="news-item__content">
+                              <h3 class="news-item__title">
+                                  Что такое кризис трех лет, и как преодолеть
+                              </h3>
+                              <p class="news-item__desc">
+                                  Обучение проводится в специализированном классе учебного центра с использованием мультимедийного оборудования и гинекологического кабинета клиники по адресу: г. Краснодар, проспект Чекистов, 42
+                              </p>
+                          </div>
+                          <div class="news-item__details flex">
+                              <span class="news-item__date">
+                                  14.10.2021
+                              </span>
+                              <a class="news-item__more link-more" href="#">
+                                  <span class="link-more__text">
+                                      Смотреть
+                                  </span>
+                                  <svg class="link-more__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.06836 19.0059L8.81571 11.3499C9.60138 10.5735 9.60138 9.31474 8.81571 8.53834L0.942011 0.75755" stroke="#0089ED"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </li>
+                      <li class="news__item news-item flex swiper-slide">
+                          <img class="news-item__photo" src="img/content/news-14-10-21-1.jpg" alt="">
+                          <div class="news-item__content">
+                              <h3 class="news-item__title">
+                                  Что такое кризис трех лет, и как преодолеть
+                              </h3>
+                              <p class="news-item__desc">
+                                  Обучение проводится в специализированном классе учебного центра с использованием мультимедийного оборудования и                         </p>
+                          </div>
+                          <div class="news-item__details flex">
+                              <span class="news-item__date">
+                                  14.10.2021
+                              </span>
+                              <a class="news-item__more link-more" href="#">
+                                  <span class="link-more__text">
+                                      Читать
+                                  </span>
+                                  <svg class="link-more__arrow" width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.06836 19.0059L8.81571 11.3499C9.60138 10.5735 9.60138 9.31474 8.81571 8.53834L0.942011 0.75755" stroke="#0089ED"/>
+                                  </svg>
+                              </a>
+                          </div>
+                      </li>
+                  </ul>
+          </div>
+      </section>
+      <section class="section equipment">
+          <div class="container equipment__container grid">
+                  <h2 class="section__title equipment__title equipment-title">
+                      <span class="equipment-title__top">
+                          Оборудование центра
+                      </span>
+                      <span class="equipment-title__bottom">
+                          кольпоскоп leisegang 3mvc led usb
+                      </span>
+                  </h2>
+                  <ul class="equipment__characteristics characteristics-list flex">
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Страна
+                          </h4>
+                          <span class="characteristic__desc">
+                              Германия
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Источник света
+                          </h4>
+                          <span class="characteristic__desc">
+                              Светодиодная лампа
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Освещенность ЛК
+                          </h4>
+                          <span class="characteristic__desc">
+                              4000/6000
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Вид кольпоскопа
+                          </h4>
+                          <span class="characteristic__desc">
+                              Оптический
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Фокусное расстояние мм
+                          </h4>
+                          <span class="characteristic__desc">
+                              400
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Увеличение мин макс
+                          </h4>
+                          <span class="characteristic__desc">
+                              7,5 / 15 / 30
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Диаметр рабочго поля мм
+                          </h4>
+                          <span class="characteristic__desc">
+                              7,5 / 15 / 30
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Увеличение мин макс
+                          </h4>
+                          <span class="characteristic__desc">
+                              7,5 / 15 / 30
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Межзрачковое расстояние
+                          </h4>
+                          <span class="characteristic__desc">
+                              58
+                          </span>
+                      </li>
+                      <li class="characteristics-list__item characteristic">
+                          <h4 class="characteristic__feature">
+                              Тип штатива
+                          </h4>
+                          <span class="characteristic__desc">
+                              Прямой с региулируемой высоттой
+                          </span>
+                      </li>
+                  </ul>
+              <div class="equipment__gallery gallery">
+                  <div class="swiper gallery__top gallery-top">
+                      <div class="swiper-wrapper">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-1.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-2.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-3.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-4.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-5.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-6.jpg" alt="">
+                          <img class="swiper-slide gallery-top__item" src="img/content/colposcop-7.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="gallery-bottom flex">
+                      <div class="swiper gallery-bottom__thumbs gallery-thumbs flex">
+                          <div class="swiper-wrapper">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-1-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-2-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-3-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-4-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-5-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-6-min.jpg" alt="">
+                              <img class="swiper-slide gallery-thumbs__item" src="img/content/colposcop-7-min.jpg" alt="">
+                          </div>
+                      </div>
+                      <div class="gallery-bottom__navigation swiper-navigation flex">
+                          <div class="swiper-button-prev gallery-button-prev"></div>
+                          <div class="swiper-button-next gallery-button-next"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section reviews">
+          <div class="container reviews__container swiper">
+              <h2 class="section__title">
+                  Отзывы
+              </h2>
+              <div class="reviews__navigation swiper-navigation flex">
+                  <div class="swiper-button-prev reviews-button-prev"></div>
+                  <div class="swiper-pagination reviews-pagination"></div>
+                  <div class="swiper-button-next reviews-button-next"></div>
+              </div>
+              <ul class="reviews__list swiper-wrapper">
+                  <li class="swiper-slide reviews__item review review-1 flex">
+                      <h3 class="review__author">
+                          Даниил А
+                      </h3>
+                      <div class="review__rating review-rating">
+                          <img class="review-rating__star" src="img/content/star.png" alt="">
+                          <img class="review-rating__star" src="img/content/star.png" alt="">
+                          <img class="review-rating__star" src="img/content/star.png" alt="">
+                          <img class="review-rating__star" src="img/content/star.png" alt="">
+                          <img class="review-rating__star" src="img/content/star.png" alt="">
+                      </div>
+                      <div class="review__text">
+                        <p>
+                            Найти хорошего гинеколога трудно. Была у Петренко Елены Павловной, помогла вылечить молочницу (сейчас я забыла ,что это такое ), прижгла мне эрозию шейки матки и прочее . Женщина очень внимательная и ответственная . Была также у Прынь Дмитрия Валерьевича , не смотря на то что мужчина гинеколог , он оказался получше многих женщин геникологов из екатерининских и прочих клиник . Он ставит правильный диагноз , не назначает лишнего . Так что рекомендую этих 2х врачей
+                        </p>
+                    </div>
+                      <span class="review__date">
+                          14.10.2021
+                      </span>
+                  </li>
+                  <li class="swiper-slide reviews__item review review-2 flex">
+                      <h3 class="review__author">
+                          Дан
+                      </h3>
+                      <div class="review__rating review-rating">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star-empty.png" alt="">
+                              <img class="review-rating__star" src="img/content/star-empty.png" alt="">
+                      </div>
+                      <div class="review__text">
+                        <p>
+                            Хочу поблагодарить Елену Павловну Петренко за ее профессионализм и доброту. Проводила у неё кольпоскопию, биопсию и санации. Делает все безболезненно. Сама клиника тоже очень понравилась, чисто и уютно. Медсестры молодцы отлично берут кровь, очень вежливы.
+                        </p>
+                      </div>
+                      <span class="review__date">
+                          14.10.2021
+                      </span>
+                  </li>
+                  <li class="swiper-slide reviews__item review review-3 flex">
+                      <h3 class="review__author">
+                          Константин Константин
+                      </h3>
+                      <div class="review__rating review-rating">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                      </div>
+                      <div class="review__text">
+                        <p>
+                            Выражаю особую благодарность Петренко Сергею Ивановичу.Это внимательный и чуткий неравнодушный к своим пациентам специалист.Спасибо Вам огромное за человеческое и доброе отношение!!!
+                        </p>
+                      </pdiv
+                      <span class="review__date">
+                          14.10.2021
+                      </span>
+                  </li>
+                  <li class="swiper-slide reviews__item review review-4 flex">
+                      <h3 class="review__author">
+                          Даниил А
+                      </h3>
+                      <div class="review__rating review-rating">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star.png" alt="">
+                              <img class="review-rating__star" src="img/content/star-empty.png" alt="">
+                      </div>
+                      <div class="review__text">
+                        <p>
+                            Хочу поблагодарить Елену Павловну Петренко за ее профессионализм и доброту. Проводила у неё кольпоскопию, биопсию и санации. Делает все безболезненно. Сама клиника тоже очень понравилась, чисто и уютно. Медсестры молодцы отлично берут кровь, очень вежливы.
+                        </p>
+                      </div>
+                      <span class="review__date">
+                          14.10.2021
+                      </span>
+                  </li>
+              </ul>
+              <div class="reviews__feedback feedback">
+                  <button class="button feedback__button" type="button" onclick="openModalAndLockScroll(event)" aria-controls="feedbackModal">
+                      Оставить отзыв
+                  </button>
+              </div>
+              <dialog class="reviews__feedback-modal feedback-modal" id="feedbackModal" onclick="closeOnBackDropClick(event)" onclose="returnScroll()">
+                  <form class="feedback-modal__form form grid" method="post" action="#">
+                      <h2 class="form__title">
+                          Оставить отзыв
+                      </h2>
+                      <p class="form__text">
+                          Ваш отзыв будет модерирован
+                      </p>
+                          <label class="form__field form-field form-name">
+                              <input class="form-field__input" type="text" name="username" placeholder="Представьтесь" minlength="2" maxlength="30" required>
+                              <svg class="form-field__svg" width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.8549 22.9847V20.3688C15.8549 16.2711 12.533 12.9492 8.43524 12.9492V12.9492C4.3375 12.9492 1.01562 16.2711 1.01562 20.3688V22.9847" stroke="#80C2FF" stroke-width="2"/>
+                                  <rect x="4.38672" y="1.51172" width="8.09878" height="8.09878" rx="4.04939" stroke="#80C2FF" stroke-width="2"/>
+                              </svg>
+                          </label>
+                          <label class="form__field form-field form-tel">
+                              <input class="form-field__input" type="tel" name="tel" placeholder="Ваш Телефон" pattern="^\+7[1-9]{10}$" required>
+                              <svg class="form-field__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.2438 12.8939L14.4301 12.3127C14.3719 12.3941 14.3153 12.4737 14.2602 12.5511C13.9392 13.002 13.6699 13.3803 13.4494 13.6356C13.4137 13.6208 13.3739 13.6048 13.3303 13.5872C12.797 13.3719 11.6915 12.9256 10.3259 11.7099L10.3259 11.7098C9.33134 10.8245 8.60158 9.73295 8.2751 9.2043C8.34908 9.11519 8.42505 9.03239 8.51395 8.9377C8.52894 8.92173 8.54459 8.90512 8.56081 8.88791C8.64842 8.79494 8.75255 8.68444 8.85714 8.5639C8.8721 8.54665 8.88708 8.52948 8.90205 8.5123C9.0935 8.29275 9.28553 8.07253 9.47197 7.67948C9.83779 6.94857 9.5319 6.26509 9.41476 6.02192C9.41352 6.01919 9.40901 6.00927 9.40011 5.98894C9.38989 5.96558 9.37664 5.93483 9.36037 5.89667C9.32788 5.82049 9.28576 5.72039 9.23608 5.60152C9.13684 5.36407 9.00995 5.05769 8.87468 4.73017C8.76699 4.4694 8.65385 4.19491 8.54559 3.93222C8.38296 3.53765 8.23132 3.16973 8.12561 2.91503L8.12471 2.91288C7.96596 2.5329 7.74558 2.11926 7.34095 1.8549C6.95648 1.6037 6.54157 1.58817 6.35081 1.58103C6.3408 1.58066 6.33141 1.5803 6.32267 1.57994C6.31097 1.57936 6.29891 1.57874 6.2865 1.57811C6.1529 1.57132 5.97935 1.5625 5.78854 1.5625C5.08497 1.5625 4.19514 1.76189 3.58424 2.38545L3.58405 2.38564C3.57224 2.3977 3.5599 2.41026 3.54707 2.42333C3.04955 2.92967 1.80859 4.19262 1.80859 6.63169C1.80859 7.90243 2.26577 9.09446 2.70478 9.95995C3.12725 10.7928 3.57517 11.4036 3.71103 11.5888C3.71867 11.5992 3.72533 11.6083 3.73094 11.616L3.74333 11.6327C3.74162 11.6304 3.7421 11.6311 3.74644 11.6373C3.75206 11.6453 3.76413 11.6625 3.78625 11.6945C3.79236 11.7034 3.79895 11.7129 3.80598 11.7231C3.83565 11.7661 3.87326 11.8205 3.91683 11.8829C4.02558 12.0387 4.17426 12.2481 4.36037 12.4969C4.7321 12.9937 5.25365 13.6483 5.90916 14.3527C7.21048 15.7511 9.08503 17.395 11.411 18.3586C13.1178 19.0663 14.2858 19.4136 15.1591 19.5521C16.0751 19.6974 16.6423 19.6082 17.106 19.5095L17.1089 19.5089C17.7955 19.3605 18.5404 19.042 19.1736 18.6134C19.7888 18.1971 20.4228 17.5919 20.7001 16.8088L20.7003 16.8082C20.9047 16.23 21.0102 15.6867 21.0486 15.2454C21.0677 15.0257 21.0714 14.817 21.0578 14.6319C21.048 14.4983 21.0211 14.2148 20.8774 13.9608L20.8774 13.9608L20.8736 13.9542C20.6739 13.6072 20.3589 13.4262 20.2011 13.34C20.104 13.2869 19.9586 13.2166 19.8284 13.1535C19.7585 13.1197 19.693 13.088 19.6415 13.0622L19.6385 13.0607C19.4222 12.953 18.7909 12.6405 18.163 12.3373C17.5827 12.057 16.9078 11.7362 16.6315 11.6373C16.3112 11.5182 15.9088 11.4469 15.4792 11.5587C15.0311 11.6753 14.6814 11.9578 14.4277 12.3161L15.2438 12.8939ZM15.2438 12.8939C15.5353 12.4823 15.9032 12.4313 16.2894 12.577M15.2438 12.8939C15.1884 12.9715 15.1331 13.0493 15.0781 13.1266C14.7265 13.6211 14.3874 14.0981 14.1054 14.4021M16.2894 12.577L13.4119 13.7589L13.4145 13.7527M16.2894 12.577C16.6828 12.7136 18.7648 13.7427 19.1928 13.9559C19.2812 14.0003 19.3634 14.0398 19.4391 14.0763C19.7299 14.2163 19.9246 14.31 20.007 14.4531M16.2894 12.577L20.007 14.4531M14.1054 14.4021L13.4159 13.754L13.4547 13.6611C13.4735 13.6527 13.487 13.6502 13.4925 13.6494C13.495 13.6491 13.4962 13.649 13.4962 13.649C13.4962 13.649 13.4939 13.6491 13.4894 13.6485C13.4817 13.6474 13.4717 13.6449 13.461 13.6404L13.4519 13.6624M14.1054 14.4021C13.8486 14.6753 13.4296 14.71 13.0781 14.5642M14.1054 14.4021L13.0781 14.5642M13.4519 13.6624C13.4507 13.6629 13.4494 13.6635 13.4482 13.6641C13.425 13.6754 13.3995 13.6931 13.3768 13.7172L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.4519 13.6624L13.4145 13.7527M13.0781 14.5642C13.0398 14.5483 12.9959 14.5305 12.9466 14.5106C12.39 14.2858 11.1554 13.7872 9.661 12.4568C8.40054 11.3347 7.54444 9.93767 7.29672 9.51873M13.0781 14.5642L8.13367 9.37699C8.13367 9.37698 8.13395 9.37654 8.13454 9.37566C8.13787 9.37029 8.15034 9.34882 8.16224 9.3139C8.17193 9.28546 8.17935 9.2537 8.18346 9.22011C8.18458 9.21088 8.18546 9.20151 8.18606 9.19204C8.18788 9.1635 8.18723 9.13399 8.18351 9.10435C8.17761 9.05738 8.16622 9.02789 8.16194 9.01801L8.05052 9.08249L8.03333 9.09244L7.29672 9.51873M7.29672 9.51873L8.0269 9.08697L8.04375 9.07701L8.1575 9.00975C8.15849 9.01143 8.1595 9.01313 8.16051 9.01484M7.29672 9.51873C7.0535 9.09847 7.2633 8.85203 7.45719 8.62427C7.46078 8.62005 7.46436 8.61584 7.46794 8.61164C7.59295 8.45696 7.71426 8.32817 7.83618 8.19873C7.92388 8.10563 8.01189 8.01219 8.10181 7.90854C8.11517 7.89315 8.12816 7.87821 8.14081 7.86367C8.33175 7.64412 8.44546 7.51339 8.57358 7.24006L8.16051 9.01484M8.16051 9.01484C8.16034 9.01449 8.16026 9.01431 8.16026 9.01431C8.16026 9.01431 8.16049 9.01475 8.16097 9.01562L8.16051 9.01484ZM20.007 14.4531C20.109 14.6334 20.109 15.4804 19.7575 16.475L20.007 14.4531ZM6.27669 2.57889C6.70474 2.59711 6.91967 2.62261 7.202 3.29838L5.78854 2.5625C5.95264 2.5625 6.10165 2.57004 6.23696 2.57689C6.25034 2.57757 6.26358 2.57824 6.27669 2.57889Z" stroke="#80C2FF" stroke-width="2" stroke-linejoin="round"/>
+                              </svg>
+                          </label>
+                          <div class="form__rating rating">
+                              <div class="rating__text">
+                                  Укажите рейтинг
+                              </div>
+                              <div class="rating__counter rating-counter">
+                                  <svg class="rating-counter__star" data-value="1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.5" d="M8.23307 1.2229C8.60421 0.495649 9.64336 0.495648 10.0145 1.2229L11.932 4.98032C12.0773 5.26504 12.35 5.46314 12.6657 5.51335L16.8318 6.17592C17.6381 6.30417 17.9592 7.29246 17.3822 7.87017L14.4013 10.855C14.1754 11.0811 14.0712 11.4017 14.1211 11.7174L14.7783 15.8843C14.9055 16.6908 14.0648 17.3016 13.3371 16.9314L9.57721 15.0187C9.2923 14.8738 8.95527 14.8738 8.67037 15.0187L4.91049 16.9314C4.18277 17.3016 3.34207 16.6908 3.46928 15.8843L4.12652 11.7174C4.17632 11.4017 4.07217 11.0811 3.84629 10.855L0.865324 7.87017C0.288356 7.29246 0.609469 6.30417 1.41581 6.17593L5.58189 5.51335C5.89757 5.46314 6.17023 5.26504 6.31553 4.98032L8.23307 1.2229Z" fill="white"/>
+                                  </svg>
+                                  <svg class="rating-counter__star" data-value="2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.5" d="M8.23307 1.2229C8.60421 0.495649 9.64336 0.495648 10.0145 1.2229L11.932 4.98032C12.0773 5.26504 12.35 5.46314 12.6657 5.51335L16.8318 6.17592C17.6381 6.30417 17.9592 7.29246 17.3822 7.87017L14.4013 10.855C14.1754 11.0811 14.0712 11.4017 14.1211 11.7174L14.7783 15.8843C14.9055 16.6908 14.0648 17.3016 13.3371 16.9314L9.57721 15.0187C9.2923 14.8738 8.95527 14.8738 8.67037 15.0187L4.91049 16.9314C4.18277 17.3016 3.34207 16.6908 3.46928 15.8843L4.12652 11.7174C4.17632 11.4017 4.07217 11.0811 3.84629 10.855L0.865324 7.87017C0.288356 7.29246 0.609469 6.30417 1.41581 6.17593L5.58189 5.51335C5.89757 5.46314 6.17023 5.26504 6.31553 4.98032L8.23307 1.2229Z" fill="white"/>
+                                  </svg>
+                                  <svg class="rating-counter__star" data-value="3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.5" d="M8.23307 1.2229C8.60421 0.495649 9.64336 0.495648 10.0145 1.2229L11.932 4.98032C12.0773 5.26504 12.35 5.46314 12.6657 5.51335L16.8318 6.17592C17.6381 6.30417 17.9592 7.29246 17.3822 7.87017L14.4013 10.855C14.1754 11.0811 14.0712 11.4017 14.1211 11.7174L14.7783 15.8843C14.9055 16.6908 14.0648 17.3016 13.3371 16.9314L9.57721 15.0187C9.2923 14.8738 8.95527 14.8738 8.67037 15.0187L4.91049 16.9314C4.18277 17.3016 3.34207 16.6908 3.46928 15.8843L4.12652 11.7174C4.17632 11.4017 4.07217 11.0811 3.84629 10.855L0.865324 7.87017C0.288356 7.29246 0.609469 6.30417 1.41581 6.17593L5.58189 5.51335C5.89757 5.46314 6.17023 5.26504 6.31553 4.98032L8.23307 1.2229Z" fill="white"/>
+                                  </svg>
+                                  <svg class="rating-counter__star" data-value="4" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.5" d="M8.23307 1.2229C8.60421 0.495649 9.64336 0.495648 10.0145 1.2229L11.932 4.98032C12.0773 5.26504 12.35 5.46314 12.6657 5.51335L16.8318 6.17592C17.6381 6.30417 17.9592 7.29246 17.3822 7.87017L14.4013 10.855C14.1754 11.0811 14.0712 11.4017 14.1211 11.7174L14.7783 15.8843C14.9055 16.6908 14.0648 17.3016 13.3371 16.9314L9.57721 15.0187C9.2923 14.8738 8.95527 14.8738 8.67037 15.0187L4.91049 16.9314C4.18277 17.3016 3.34207 16.6908 3.46928 15.8843L4.12652 11.7174C4.17632 11.4017 4.07217 11.0811 3.84629 10.855L0.865324 7.87017C0.288356 7.29246 0.609469 6.30417 1.41581 6.17593L5.58189 5.51335C5.89757 5.46314 6.17023 5.26504 6.31553 4.98032L8.23307 1.2229Z" fill="white"/>
+                                  </svg>
+                                  <svg class="rating-counter__star" data-value="5" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path opacity="0.5" d="M8.23307 1.2229C8.60421 0.495649 9.64336 0.495648 10.0145 1.2229L11.932 4.98032C12.0773 5.26504 12.35 5.46314 12.6657 5.51335L16.8318 6.17592C17.6381 6.30417 17.9592 7.29246 17.3822 7.87017L14.4013 10.855C14.1754 11.0811 14.0712 11.4017 14.1211 11.7174L14.7783 15.8843C14.9055 16.6908 14.0648 17.3016 13.3371 16.9314L9.57721 15.0187C9.2923 14.8738 8.95527 14.8738 8.67037 15.0187L4.91049 16.9314C4.18277 17.3016 3.34207 16.6908 3.46928 15.8843L4.12652 11.7174C4.17632 11.4017 4.07217 11.0811 3.84629 10.855L0.865324 7.87017C0.288356 7.29246 0.609469 6.30417 1.41581 6.17593L5.58189 5.51335C5.89757 5.46314 6.17023 5.26504 6.31553 4.98032L8.23307 1.2229Z" fill="white"/>
+                                  </svg>
+                              </div>
+                          </div>
+                          <textarea class="form__textarea form-textarea" minlength="10" placeholder="Напишите ваш отзыв" required></textarea>
+                          <div class="form__agreement agreement flex">
+                              <input class="agreement__checkbox checkbox" id="feedback-checkbox" type="checkbox" checked>
+                              <label class="agreement__desc" for="feedback-checkbox">
+                                  Отправляя заявку, вы принимаете условия политики конфиденциальности
+                              </label>
+                          </div>
+                          <button class="form__button button" type="submit">
+                              Отправить
+                          </button>
+                          <button class="form__close" type="button" onclick="window.feedbackModal.close(); returnScroll(event)">
+                              <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.72461 14.8923L13.3533 8.26364L6.63328 1.54361" stroke="white" stroke-width="2"/>
+                                  <path d="M19.9824 1.54468L13.3537 8.17337L20.0738 14.8934" stroke="white" stroke-width="2"/>
+                              </svg>
+                          </button>
+                  </form>
+              </dialog>
+          </div>
+      </section>
+      <section class="section photos">
+          <div class="container">
+          <h2 class="section__title">
+              Галерея
+          </h2>
+              <div class="photos__list grid" id="index-gallery">
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-1-full.jpg" data-lg-size="651-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-1-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item photos-item-horizontal" href="img/content/index-gallery/item-2-full.jpg" data-lg-size="1322-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-2-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-3-full.jpg" data-lg-size="640-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-3-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-4-full.jpg" data-lg-size="652-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-4-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-5-full.jpg" data-lg-size="652-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-5-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-6-full.jpg" data-lg-size="639-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-6-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item photos-item-horizontal" href="img/content/index-gallery/item-7-full.jpg" data-lg-size="1322-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-7-small.jpg" alt="">
+                  </a>
+                  <a class="photos__item photos-item" href="img/content/index-gallery/item-8-full.jpg" data-lg-size="652-860">
+                      <img class="photos-item__preview" src="img/content/index-gallery/item-8-small.jpg" alt="">
+                  </a>
+              </div>
+          </div>
+      </section>
+      <section class="section faq">
+          <div class="container">
+              <h2 class="faq__title section__title">
+                  Ответы на вопросы
+              </h2>
+          </div>
+          <div class="container faq__container grid">
+              <div class="faq__questions questions swiper">
+                  <div class="questions__list questions-list swiper-wrapper tab">
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-1')" id="defaultOpen">
+                          <span class="question__number">
+                              1
+                          </span>
+                          <h3 class="question__text">
+                              Что такое шейка матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-2')">
+                          <span class="question__number">
+                              2
+                          </span>
+                          <h3 class="question__text">
+                              Что такое «эрозия» шейки матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-3')">
+                          <span class="question__number">
+                              3
+                          </span>
+                          <h3 class="question__text">
+                              Как лечить эктопию шейки матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-4')">
+                          <span class="question__number">
+                              4
+                          </span>
+                          <h3 class="question__text">
+                              Какие заболевания шейки матки встречаются чаще всего?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-5')">
+                          <span class="question__number">
+                              5
+                          </span>
+                          <h3 class="question__text">
+                              Что такое шейка матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-6')">
+                          <span class="question__number">
+                              6
+                          </span>
+                          <h3 class="question__text">
+                              Что такое «эрозия» шейки матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-7')">
+                          <span class="question__number">
+                              7
+                          </span>
+                          <h3 class="question__text">
+                              Как лечить эктопию шейки матки?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-8')">
+                          <span class="question__number">
+                              8
+                          </span>
+                          <h3 class="question__text">
+                              Какие заболевания шейки матки встречаются чаще всего?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-9')">
+                          <span class="question__number">
+                              9
+                          </span>
+                          <h3 class="question__text">
+                              Какие заболевания шейки матки встречаются чаще всего?
+                          </h3>
+                      </button>
+                      <button class="questions-list__item question tablinks swiper-slide flex" onclick="openQuestion(event, 'answer-10')">
+                          <span class="question__number">
+                              10
+                          </span>
+                          <h3 class="question__text">
+                              Какие заболевания шейки матки встречаются чаще всего?
+                          </h3>
+                      </button>
+                  </div>
+                  <div class="faq__navigation swiper-navigation flex">
+                      <div class="swiper-button-prev faq-button-prev"></div>
+                      <div class="swiper-pagination faq-pagination"></div>
+                      <div class="swiper-button-next faq-button-next"></div>
+                  </div>
+              </div>
+              <div class="faq__answers faq__answers">
+                  <div class="faq__answers-item answer tabcontent" id="answer-1">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Шейка представляет собой своеобразное мышечное кольцо, которым матка заканчивается и выходит во влагалище. Внутри шейки проходит канал (цервикальный канал), соединяющий ее с полостью матки.
+                              </p>
+                              <p class="answer__text">
+                                  Шейка матки состоит из мышечных и соединительнотканных волокон. Верхний слой выстлан многослойным плоским эпителием (слизистая оболочка, которая состоит из 20-30 рядов клеток), а стенки цервикального канала, покрыты однорядным эпителием (слизистая оболочка состоит всего из одного ряда клеток, которые секретируют слизь).
+                              </p>
+                              <p class="answer__text">
+                                  Стык между слизистыми оболочками влагалищной части шейки матки и канала находится в идеале на уровне наружного отверстия цервикального канала.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-2">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet aut nam assumenda minus facere, repudiandae corrupti quisquam, fugit velit quia molestiae eveniet est mollitia placeat tempora accusamus rem eaque.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias amet aut nam assumenda minus facere, repudiandae corrupti quisquam, fugit velit quia molestiae eveniet est mollitia placeat tempora accusamus rem eaque.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-3">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-4">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-5">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-6">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-7">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-8">
+                          <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                              <p class="answer__text answer__first-paragraph">
+                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                              <p class="answer__text">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                              </p>
+                          </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-9">
+                      <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                          <p class="answer__text answer__first-paragraph">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                          </p>
+                          <p class="answer__text">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                          </p>
+                          <p class="answer__text">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="faq__answers-item answer tabcontent" id="answer-10">
+                  <div class="answer__content" data-simplebar data-simplebar-auto-hide="false">
+                      <p class="answer__text answer__first-paragraph">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita recusandae sed harum quidem! Ipsa labore nobis reiciendis amet, ullam earum vel. In quaerat similique totam nisi ea, veritatis consectetur necessitatibus.
+                      </p>
+                      <p class="answer__text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                      </p>
+                      <p class="answer__text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                      </p>
+                      <p class="answer__text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                      </p>
+                      <p class="answer__text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                      </p>
+                      <p class="answer__text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta at aperiam distinctio rem exercitationem quam tempora nisi, non incidunt illo perferendis delectus deserunt nemo ex omnis repudiandae odio quaerat.
+                      </p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section communication">
+          <div class="container communication__container">
+              <form class="communication__form form grid" method="post" action="#">
+                      <h2 class="form__title">
+                          Задать вопрос
+                      </h2>
+                      <span class="form__text">
+                          получите индивидуальные условия обучения
+                      </span>
+                  <label class="form__field form-field form-name">
+                      <input class="form-field__input" type="text" name="username" placeholder="Представьтесь" minlength="2" maxlength="30" required>
+                      <svg class="form-field__svg" width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.097 22.8812V20.2653C16.097 16.1676 12.7752 12.8457 8.67743 12.8457V12.8457C4.57969 12.8457 1.25781 16.1676 1.25781 20.2653V22.8812" stroke="#80C2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <rect x="4.62891" y="1.40625" width="8.09878" height="8.09878" rx="4.04939" stroke="#80C2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </label>
+                  <label class="form__field form-field form-mail">
+                      <input class="form-field__input" type="email" name="email" placeholder="Ваш Email" required>
+                      <svg class="form-field__svg" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.44029 3.42803L8.65008 7.81522C9.79 8.77515 11.4617 8.75279 12.5756 7.76272L15.748 4.94282M16.486 16.4561L4.86719 16.4561C3.21033 16.4561 1.86719 15.1129 1.86719 13.4561L1.86719 4.61682C1.86719 2.95997 3.21033 1.61682 4.86719 1.61682L16.486 1.61682C18.1429 1.61682 19.486 2.95997 19.486 4.61682L19.486 13.4561C19.486 15.1129 18.1429 16.4561 16.486 16.4561Z" stroke="#80C2FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </label>
+                  <textarea class="form__textarea form-textarea" rows="4" minlength="10" placeholder="Напишите ваш вопрос" required></textarea>
+                  <div class="form__agreement agreement flex">
+                      <input class="agreement__checkbox checkbox" id="communication-checkbox" type="checkbox" checked>
+                      <label class="agreement__desc" for="communication-checkbox">
+                          Отправляя заявку, вы принимаете условия политики конфиденциальности
+                      </label>
+                  </div>
+                  <button class="form__button button" type="submit">
+                      Отправить вопрос
+                  </button>
+              </form>
+          </div>
+      </section>
+  </main>
+  <footer class="footer">
+      <div class="container footer__container grid">
+          <div class="footer__company company">
+              <img class="company__logo" src="img/content/logo.png" alt="Логотип учебного центра">
+              <div class="company__name">
+                  Учебный Центр кольпоскопии доктора Петренко
+              </div>
+              <div class="company__juristic juristic">
+                  <div class="juristic__name">
+                      ООО «Центр кольпоскопии и цервикальной патологии»
+                  </div>
+                  <div class="juristic__text">
+                      Условия конфиденциальности предоставления и защиты информации
+                  </div>
+              </div>
+          </div>
+          <div class="footer__menu footer-menu">
+              <div class="footer-menu__contacts contacts grid">
+                  <a class="contacts__tel" href="tel:+78612012203">
+                      +7 861 201-22-03
+                  </a>
+                  <span class="contacts__address">
+                      г. Краснодар, пр-т Чекистов, д. 42
+                  </span>
+                      <ul class="contacts__social social flex">
+                          <li class="social__item">
+                              <a href="#" class="social__link social-link-footer social-link-footer-inst">
+                                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="21" height="22" viewBox="0 0 169.063 169.063">
+                                      <path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z" fill="#26A1FC"/>
+                                      <path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22a11.053 11.053 0 0 0-3.23 7.78c0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z" fill="#26A1FC"/>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="social__item">
+                              <a href="#" class="social__link social-link-footer">
+                                  <svg width="21" height="22" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M2.3029 18.2597C2.207 18.5456 2.27997 18.861 2.49165 19.0758C2.70333 19.2905 3.01775 19.3679 3.30495 19.2761L6.14001 18.3698C7.50931 19.1948 9.10753 19.6658 10.8178 19.6658C15.8364 19.6658 19.9158 15.5838 19.9158 10.5657C19.9158 5.54769 15.8364 1.46562 10.8178 1.46562H10.8137C5.79516 1.46562 1.71562 5.54659 1.71562 10.5657C1.71562 12.4057 2.26435 14.1231 3.20975 15.5564L2.3029 18.2597ZM11.4178 13.7942L11.4176 13.7941C9.41661 12.9651 8.05101 11.0178 7.69091 10.5043C7.66299 10.4645 7.64112 10.4333 7.62546 10.4119C7.62239 10.4077 7.61886 10.4029 7.6149 10.3975C7.54573 10.3031 7.3451 10.0293 7.15569 9.6559C6.94964 9.24969 6.79337 8.79506 6.79337 8.37969C6.79337 7.54917 7.17347 7.16327 7.38959 6.94384C7.39684 6.93649 7.4039 6.92932 7.41075 6.92233C7.41341 6.92048 7.43139 6.90767 7.47422 6.89347C7.53089 6.87468 7.60687 6.86189 7.69074 6.86189C7.7241 6.86189 7.75599 6.86259 7.78847 6.86373C7.83765 6.9826 7.9008 7.13582 7.96941 7.3023C8.14974 7.73985 8.36783 8.26903 8.46958 8.50722C8.45789 8.52086 8.44539 8.53524 8.42993 8.55301C8.42217 8.56194 8.41365 8.57173 8.40413 8.58271C8.36446 8.62843 8.32699 8.66823 8.27757 8.72074C8.26715 8.7318 8.25621 8.74343 8.2446 8.75579C8.18392 8.82043 8.11088 8.89935 8.03354 8.99425C8.03221 8.99577 8.03074 8.99745 8.02912 8.99929C7.98363 9.05113 7.82674 9.22992 7.74638 9.4658C7.63406 9.79548 7.68733 10.131 7.8574 10.4249L7.85737 10.4249L7.86118 10.4313C8.01264 10.6875 8.55113 11.5711 9.36458 12.2952C10.319 13.1449 11.1257 13.4708 11.4607 13.6061C11.4888 13.6175 11.5137 13.6276 11.535 13.6364L11.5365 13.6371C11.9475 13.8074 12.5727 13.8199 13.0109 13.3537L13.0146 13.3497C13.1985 13.1515 13.4079 12.8612 13.5922 12.6019C13.612 12.6109 13.6328 12.6205 13.6547 12.6306C13.7954 12.6957 13.9677 12.7779 14.1436 12.8629C14.4936 13.0319 14.8469 13.2068 14.9681 13.2671C14.9802 13.2732 14.9922 13.2792 15.004 13.285C14.9851 13.4079 14.9505 13.5576 14.8932 13.7198L15.6474 13.9864L14.8933 13.7194C14.8744 13.7727 14.7835 13.9103 14.5472 14.0703C14.3257 14.2202 14.0633 14.3295 13.8506 14.3756C13.7006 14.4075 13.5531 14.4357 13.2428 14.3865C12.8974 14.3317 12.3449 14.1786 11.4178 13.7942ZM15.2531 13.4081C15.253 13.4081 15.2527 13.4079 15.2522 13.4076L15.2531 13.4081Z" stroke="#26A1FC" stroke-width="1.6" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </li>
+                          <li class="social__item">
+                              <a href="#" class="social__link social-link-footer">
+                                  <svg width="21" height="22" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M8.04111 11.2837C7.88679 11.4222 7.79232 11.6153 7.77761 11.8222L7.48854 15.888C7.4728 16.1095 7.5498 16.3275 7.70113 16.49C7.85246 16.6525 8.0645 16.7447 8.28653 16.7447C8.62057 16.7447 8.90872 16.6697 9.16431 16.5223C9.38038 16.3978 9.54428 16.2344 9.64136 16.1377C9.64517 16.1339 9.64888 16.1302 9.65248 16.1266L11.1011 14.7421L14.5781 17.2884C14.6047 17.3079 14.6325 17.3258 14.6613 17.3418C15.1233 17.5993 15.7253 17.7788 16.31 17.5139C16.8918 17.2504 17.1633 16.6792 17.2856 16.1429L17.2856 16.1429L17.2879 16.1321L19.9191 3.80289C19.9215 3.7935 19.9237 3.78406 19.9257 3.77456C20.0721 3.09223 19.9977 2.37732 19.4992 1.8976C18.9911 1.40866 18.2974 1.40621 17.7526 1.60898L17.7526 1.60895L17.7457 1.61161L2.24397 7.54652L2.24397 7.54652L2.24052 7.54785C1.92304 7.67109 1.63423 7.82673 1.40719 8.02563C1.18464 8.22059 0.957992 8.51601 0.923156 8.91097C0.886002 9.33222 1.08261 9.67122 1.31946 9.89264C1.54442 10.1029 1.83015 10.2376 2.11256 10.3252C2.11263 10.3252 2.1127 10.3252 2.11278 10.3253C2.11295 10.3253 2.11313 10.3254 2.11331 10.3254L6.07572 11.5579C6.29832 11.6271 6.54005 11.5958 6.73767 11.4722L10.3448 9.21512L8.04111 11.2837Z" stroke="#26A1FC" stroke-width="1.6" stroke-linejoin="round"/>
+                                  </svg>
+                              </a>
+                          </li>
+                      </ul>
+              </div>
+              <ul class="footer-menu__nav navigation grid">
+                  <li class="navigation__group navigation-group">
+                      <ul class="navigation-group__list">
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Главная
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Курсы
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Специалисты
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="navigation__group navigation-group">
+                      <ul class="navigation-group__list">
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Oборудование
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Oтзывы
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Галерея
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="navigation__group navigation-group">
+                      <ul class="navigation-group__list">
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Гладокументы
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Клиника
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link" href="#">
+                                  Информация
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="navigation__group navigation-group">
+                      <ul class="navigation-group__list">
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link navigation-group-link flex" href="#">
+                                  <svg class="navigation-group-link__icon" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M14.3129 12.1181L14.3127 12.1185C14.1119 12.6857 13.6568 13.1157 13.2282 13.4058C12.7851 13.7056 12.2641 13.9287 11.7813 14.033L11.7789 14.0335C11.4535 14.1028 11.0521 14.1654 10.4104 14.0636C9.80276 13.9673 8.99806 13.727 7.83256 13.2439L14.3129 12.1181ZM14.3129 12.1181C14.4554 11.7149 14.5293 11.3352 14.5563 11.025C14.5697 10.8706 14.5725 10.722 14.5627 10.5883C14.5559 10.4958 14.5367 10.2794 14.4248 10.0815L14.4248 10.0815L14.4218 10.0762C14.2682 9.80945 14.0277 9.67309 13.9178 9.61303C13.8495 9.57573 13.7433 9.52431 13.6526 9.48038C13.6065 9.45806 13.5644 9.43767 13.5333 9.42205L13.5309 9.42084C13.3834 9.34741 12.9533 9.13455 12.5254 8.92788C12.1353 8.73945 11.6695 8.51773 11.4723 8.44692C11.2389 8.36022 10.9394 8.30596 10.6168 8.38995C10.2794 8.47777 10.0193 8.6899 9.83377 8.952L10.4867 9.41424L9.83572 8.94927C9.79592 9.00499 9.75732 9.05921 9.71989 9.11177C9.52678 9.38298 9.36485 9.6104 9.22988 9.77567C8.86965 9.63026 8.13276 9.33265 7.21905 8.51921L7.21902 8.51919C6.59751 7.96593 6.12923 7.29015 5.89168 6.91433L14.3129 12.1181ZM2.5646 8.62818L2.55468 8.61487C2.55085 8.60962 2.5463 8.60341 2.54106 8.59627C2.44789 8.46923 2.13829 8.0471 1.84629 7.47144C1.54367 6.87483 1.22344 6.04399 1.22344 5.15225C1.22344 3.44353 2.0966 2.5548 2.44083 2.20443C2.44953 2.19558 2.45789 2.18707 2.46588 2.1789L2.46604 2.17875C2.91278 1.72275 3.55525 1.58281 4.05155 1.58281C4.18462 1.58281 4.30568 1.58897 4.39644 1.59359C4.40471 1.59401 4.41273 1.59442 4.42048 1.5948C4.42645 1.59505 4.433 1.59528 4.44009 1.59554C4.57002 1.6002 4.88285 1.61141 5.17342 1.80126C5.4801 2.00163 5.64156 2.31161 5.7517 2.57524L5.75242 2.57697L5.75242 2.57697C5.82441 2.75041 5.92773 3.00108 6.03846 3.26976C6.11214 3.44853 6.1891 3.63526 6.26231 3.81252C6.35436 4.0354 6.44064 4.24372 6.50808 4.40508C6.54185 4.48588 6.57039 4.5537 6.59234 4.60517C6.60333 4.63095 6.61219 4.6515 6.61894 4.66693C6.62416 4.67885 6.62686 4.68483 6.62766 4.6866L2.5646 8.62818ZM2.5646 8.62818C2.56348 8.62671 2.56281 8.62582 2.56279 8.62584M2.5646 8.62818L2.56279 8.62584M2.56279 8.62584C2.56273 8.62588 2.5696 8.63549 2.59059 8.66586M2.56279 8.62584L2.59059 8.66586M2.59059 8.66586C2.59473 8.67185 2.59921 8.67834 2.60401 8.68529M2.59059 8.66586L2.60401 8.68529M2.60401 8.68529C2.62418 8.71451 2.64997 8.75185 2.67977 8.79454M2.60401 8.68529L2.67977 8.79454M2.67977 8.79454C2.75431 8.90132 2.85629 9.04493 2.98394 9.21555M2.67977 8.79454L2.98394 9.21555M2.98394 9.21555C3.23886 9.55626 3.59654 10.0052 4.04623 10.4884M2.98394 9.21555L4.04623 10.4884M4.04623 10.4884C4.93783 11.4465 6.2273 12.5788 7.83238 13.2438L4.04623 10.4884Z" stroke="#0094FF" stroke-width="1.6" stroke-linejoin="round"/>
+                                  </svg>
+                                  <span class="navigation-group-link__text">
+                                      Заказать звонок
+                                  </span>
+                              </a>
+                          </li>
+                          <li class="navigation-group__item">
+                              <a class="navigation-group__link navigation-group-link flex" href="#">
+                                  <svg class="navigation-group-link__icon" width="16" height="15" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M15.2259 7.40326C15.2259 11.0346 12.2821 13.9784 8.65073 13.9784C7.44106 13.9784 6.30768 13.6517 5.33401 13.0818L1.02344 14.833L2.75583 10.319C2.32037 9.44035 2.07559 8.45039 2.07559 7.40326C2.07559 3.77191 5.01938 0.828125 8.65073 0.828125C12.2821 0.828125 15.2259 3.77191 15.2259 7.40326Z" stroke="#26A1FC" stroke-width="1.6" stroke-linejoin="round"/>
+                                  </svg>
+                                  <span class="navigation-group-link__text">
+                                      Форум
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer__partners partners flex">
+              <h2 class="partners__title">
+                  Наши партнеры
+              </h2>
+              <ul class="partners__list flex">
+                  <li class="partners__item">
+                      <a href="#" class="partners__link partners-link">
+                          <img class="partners-link__logo" src="img/content/logo-cervix.png" alt="">
+                      </a>
+                  </li>
+                  <li class="partners__item">
+                      <a href="#" class="partners__link partners-link">
+                          <img class="partners-link__logo" src="img/content/logo-fotek.jpg" alt="">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.umd.min.js" integrity="sha512-OUF2jbRheQR5yXPCvXN71udWa5cvwPf+shcXM+5GrW1vtNurTn7az8LCP3hS50gm17ULXdh3cdkhiPa0Qqyczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js" integrity="sha512-dc8xJSGs0ib9uo0fLT/v4wp2LG7+4OSzc+UpFiIKiv6QP/e4hZH/S8manUCTtO3tNVGzcje8uJjSdL+NH29blQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
