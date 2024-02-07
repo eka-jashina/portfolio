@@ -12,10 +12,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__container flex">
-            <img class="header__logo" src="img/content/logo.png" alt="Логотип студии High pass">
+        <div class="container header__container grid">
+            <a class="header__logo logo">
+                <img class="logo__img" src="img/content/logo.png" alt="Логотип студии High pass">
+            </a>
             <nav class="header__nav nav">
-                <ul class="nav__list flex">
+                <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#" class="nav__link">
                             О студии
@@ -42,6 +44,12 @@
                         </a>
                     </li>
                 </ul>
+                <button class="nav__burger burger" aria-label="Открыть или закрыть главное меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                  </button>
             </nav>
             <button class="header__search search" type="button">
                 <svg class="search__svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,9 +141,11 @@
                 </h2>
                 <ul class="projects__list projects-list grid">
                     <li class="projects-list__landscape project flex">
-                        <a class="project__link" href="#">
-                            Синтетически смешаны с не уникальными данными до степени…
-                        </a>
+                        <p class="project__desc project-desc landscape-desc">
+                            <a class="project-desc__link" href="#">
+                                Синтетически смешаны с не уникальными данными до степени…
+                            </a>
+                        </p>
                         <span class="project__date">
                             16 июня
                         </span>
@@ -146,9 +156,11 @@
                         </span>
                     </li>
                     <li class="projects-list__portrait-man project flex">
-                        <a class="project__link" href="#">
-                            В своём стремлении улучшить опыт мы упускаем, что явные...
-                        </a>
+                        <p class="project__desc project-desc portrait-man-desc">
+                            <a class="project-desc__link" href="#">
+                                В своём стремлении улучшить опыт мы упускаем, что явные...
+                            </a>
+                        </p>
                         <span class="project__date">
                             28 мая
                         </span>
@@ -159,9 +171,11 @@
                         </span>
                     </li>
                     <li class="projects-list__object project flex">
-                        <a class="project__link" href="#">
-                            Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада
-                        </a>
+                        <p class="project__desc project-desc object-desc">
+                            <a class="project-desc__link" href="#">
+                                Равным образом, высокое качество позиционных высокотехнологичная концепция общественного уклада
+                            </a>
+                        </p>
                         <span class="project__date">
                             14 мая
                         </span>
@@ -210,9 +224,11 @@
                         </span>
                     </li>
                     <li class="projects-list__retouch project flex">
-                        <a class="link project__link" href="#">
-                            Как принято считать, многие известные личности и по сей день остаются уделом либералов…
-                        </a>
+                        <p class="project__desc project-desc">
+                            <a class="project-desc__link" href="#">
+                                Как принято считать, многие известные личности и по сей день остаются уделом либералов…
+                            </a>
+                        </p>
                         <span class="project__date">
                             9 марта
                         </span>
@@ -223,9 +239,11 @@
                         </span>
                     </li>
                     <li class="projects-list__portrait-woman project flex">
-                        <a class="link project__link" href="#">
-                            С учётом сложившейся международной обстановки, новая модель организационной…
-                        </a>
+                        <p class="project__desc project-desc">
+                            <a class="project-desc__link" href="#">
+                                С учётом сложившейся международной обстановки, новая модель организационной…
+                            </a>
+                        </p>
                         <span class="project__date">
                             1 марта
                         </span>
@@ -291,7 +309,7 @@
     </main>
     <footer class="footer">
         <div class="container footer__container flex">
-            <div class="footer__company footer-company">
+            <div class="footer__company footer-company flex">
                 <img class="footer-company__logo" src="img/content/logo.png" alt="Логотип студии High pass">
                 <span class="footer-company__copyright">
                     Фотостудия High pass <sup>&copy;</sup> 2018–2020

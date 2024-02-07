@@ -80,6 +80,11 @@
     line-height: 16px;
     color: $light-text-color;
     background-color: $dark-bg-color;
+    @media (max-width: 320px) {
+        padding: 6px 13px;
+        font-size: 12px;
+        line-height: 13px;
+      }
 }
 
 @mixin img-in-before {
@@ -99,7 +104,7 @@
     line-height: 19px;
     transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
     @media (max-width: 320px) {
-        padding: 12px 23px;
+        padding: 11px 23px;
       }
 }
 
